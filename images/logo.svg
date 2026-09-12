@@ -1,0 +1,30 @@
+<svg width="220" height="56" viewBox="0 0 220 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- SBR Logo Emblem -->
+  <g transform="translate(2, 2)">
+    <!-- Outer Oval Ring -->
+    <ellipse cx="22" cy="18" rx="20" ry="16.5" stroke="#EB5724" stroke-width="3" fill="none"/>
+    <!-- Central Blow Pin Line -->
+    <line x1="22" y1="5.5" x2="22" y2="30.5" stroke="#EB5724" stroke-width="3" stroke-linecap="round"/>
+    <!-- Symmetrical Inner Bottle Profiles -->
+    <path d="M22 5.5 C13 7.5 12 14 16.5 18.5 C10 23 10 29 22 30.5" stroke="#EB5724" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+    <path d="M22 5.5 C31 7.5 32 14 27.5 18.5 C34 23 34 29 22 30.5" stroke="#EB5724" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+    <!-- Base Mold Chord -->
+    <line x1="7" y1="26" x2="37" y2="26" stroke="#EB5724" stroke-width="2.8" stroke-linecap="round"/>
+    <!-- SBR Letters Below Emblem -->
+    <g fill="#EB5724">
+      <!-- S -->
+      <path d="M4 38.5 C4 36.5 6 35 9 35 C12.5 35 14 36.5 14 38 C14 41 5 40 5 44 C5 46.5 7.5 48 11 48 C14 48 15 46.5 15 46 L13 45 C12.5 46 11.5 46.5 10.5 46.5 C8.5 46.5 7.2 45.5 7.2 44.2 C7.2 41.5 16 42.5 16 37.8 C16 34.5 13.5 33 9.5 33 C5.5 33 3.5 35 3 37.5 Z"/>
+      <!-- B -->
+      <path d="M18.5 33.5 H25 C28 33.5 29.5 35 29.5 37 C29.5 38.5 28.5 39.5 27 40 C29 40.5 30.5 42 30.5 44.2 C30.5 46.8 28.2 48 24.8 48 H18.5 Z M21 39 H24.2 C26 39 27 38.2 27 37 C27 35.8 26 35.2 24.2 35.2 H21 Z M21 46.2 H24.8 C26.8 46.2 28 45.3 28 43.8 C28 42.2 26.8 41.2 24.8 41.2 H21 Z"/>
+      <!-- R -->
+      <path d="M33 33.5 H39.5 C43 33.5 45 35.2 45 37.8 C45 39.8 43.8 41.2 42 42 L45.5 48 H42.8 L39.5 42.5 H35.5 V48 H33 Z M35.5 40.5 H39.2 C41.2 40.5 42.5 39.5 42.5 37.8 C42.5 36.2 41.2 35.5 39.2 35.5 H35.5 Z"/>
+    </g>
+  </g>
+  <!-- Brand Typography -->
+  <g transform="translate(56, 12)">
+    <!-- SBR Heading -->
+    <text x="0" y="20" font-family="'Onest', 'DM Sans', sans-serif" font-weight="900" font-size="24" fill="#121820" letter-spacing="1">SBR <tspan fill="#EB5724">MACHINES</tspan></text>
+    <!-- Subtitle -->
+    <text x="1" y="32" font-family="'DM Sans', sans-serif" font-weight="600" font-size="8.5" fill="#64748B" letter-spacing="2.2">PET BLOW MOULDING</text>
+  </g>
+</svg>
