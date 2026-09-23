@@ -55,61 +55,7 @@
     <!-- Topbar Section End -->
 
     <!-- Header Start -->
-    <header class="main-header">
-        <div class="header-sticky">
-            <nav class="navbar navbar-expand-lg">
-                <div class="container">
-                    <a class="navbar-brand" href="#">
-                        <img src="images/sbr.png" width="90px" height="90px" alt="SBR Machines">
-                    </a>
-                    <div class="collapse navbar-collapse main-menu">
-                        <div class="nav-menu-wrapper">
-                            <ul class="navbar-nav mr-auto" id="menu">
-                                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
-                                <li class="nav-item submenu active"><a class="nav-link" href="#machines">Machines</a>
-                                    <ul>
-                                        <li><a href="#machines">Single Cavity PET Stretch Blow Moulding Machine</a></li>
-                                        <li><a href="#machines">Economical 2 Cavity PET Stretch Blow Moulding
-                                                Machine</a></li>
-                                        <li><a href="#machines">Advanced 2 Cavity PET Stretch Blow Moulding Machine</a>
-                                        </li>
-                                        <li><a href="#machines">Energy Saving 2 Cavity PET Stretch Blow Moulding
-                                                Machine</a></li>
-                                        <li><a href="#machines">Premium 4 Cavity PET Stretch Blow Moulding Machine</a>
-                                        </li>
-                                        <li><a href="#machines">Energy Saving 4 Cavity PET Stretch Blow Moulding
-                                                Machine</a></li>
-                                        <li><a href="#machines">Premium Plus 4 Cavity PET Stretch Blow Moulding
-                                                Machine</a></li>
-                                        <li><a href="#machines">Energy Saving 6 Cavity PET Stretch Blow Moulding
-                                                Machine</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
-                                <li class="nav-item submenu"><a class="nav-link" href="#">Applications</a>
-                                    <ul>
-                                        <li><a href="#">Water Bottles</a></li>
-                                        <li><a href="#">Beverage</a></li>
-                                        <li><a href="#">Edible Oil</a></li>
-                                        <li><a href="#">Personal Care</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-                            </ul>
-                        </div>
-                        <div class="header-contact-btn">
-                            <a href="tel:+918793044005" class="header-contact-now"><img src="images/icon-phone.svg"
-                                    alt="">+918793044005</a>
-                            <a href="#" class="btn-default">Request Quote</a>
-                        </div>
-                    </div>
-                    <div class="navbar-toggle"></div>
-                </div>
-            </nav>
-            <div class="responsive-menu"></div>
-        </div>
-    </header>
+    <?php include "header.php" ?>
     <!-- Header End -->
 
     <!-- Hero Slider Section Start (2 Sequential Videos) -->
@@ -124,7 +70,9 @@
                             <video class="hero-video-item" playsinline muted preload="auto" poster="images/hero-bg.jpg">
                                 <source src="videos/video-1.mp4" type="video/mp4">
                                 <source src="videos/hero-video-1.mp4" type="video/mp4">
+                               
                             </video>
+                          
                         </div>
                         <div class="container">
                             <div class="row align-items-center">
@@ -189,6 +137,7 @@
                         </div>
                     </div>
                 </div>
+              
             </div>
             <!-- Slider Pagination & Navigation -->
             <div class="hero-pagination"></div>
@@ -300,7 +249,217 @@
     <!-- Hero CTA Box End -->
 
     <!-- Professional Stats Counter Section Start -->
-    <div class="stats-counter-section">
+   
+    <!-- Professional Stats Counter Section End -->
+
+    <!-- Process Section: Transform Preforms into Bottles -->
+    <div class="about-us" id="process">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="about-images">
+                   <img src="images/sbr-building.jpg" style="border-radius:20px" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="about-us-content">
+                    <div class="section-title">
+                        <h3 class="wow fadeInUp"><i class="fa-solid fa-arrows-spin"></i> About Us</h3>
+                        <h2 class="text-anime-style-2" data-cursor="-opaque">Leading Manufacturer of
+                            <span>Advanced PET Blow Moulding Machines</span>
+                        </h2>
+                        <p class="wow fadeInUp" data-wow-delay="0.2s">SBR Machines Pvt. Ltd., Pune, India, is a leading manufacturer of advanced PET bottle blowing machines with over 17 years of expertise. Our flagship SE (STAR) Series All-Electric High-Speed Machines are engineered for superior productivity, energy efficiency, and precision.</p>
+                        <p class="wow fadeInUp" data-wow-delay="0.3s">We provide complete turnkey solutions including plant planning, installation, training, and after-sales support. Trusted by 800+ satisfied customers with over 1,000 installations across India and international markets.</p>
+                    </div>
+                    
+                    <div class="about-content-btn wow fadeInUp" data-wow-delay="0.4s">
+                        <a href="#machines" class="btn-default">Explore
+                            Machines</a>
+                        <a href="tel:+918793044005" class="about-phone-btn">
+                            <div class="phone-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div class="phone-meta">
+                                <span>Technical Support</span>
+                                <strong>+91 8793044005</strong>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Process Section End -->
+
+    <!-- Machine Range Section (Products) -->
+    <div class="our-services" id="machines">
+        <div class="container">
+            <div class="row section-row align-items-center">
+                <div class="col-lg-12">
+                    <div class="section-title section-title-center">
+                        <h2 class=" text-anime-style-2"> Machines</h2>
+                        <h3 class="wow fadeInUp" data-cursor="-opaque">Solutions Designed Around <span>Your
+                                Production</span></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="services-slider">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <!-- 01. Single Cavity -->
+                                <div class="swiper-slide">
+                                    <div class="service-item">
+                                        <div class="service-image">
+                                            <div class="service-badge-wrapper">
+                                                <span class="service-no-pill">01</span>
+                                                <span class="service-cavity-pill"><i class="fa-solid fa-cube"></i>
+                                                    Single Cavity</span>
+                                            </div>
+                                            <a href="#">
+                                                <figure class="image-anime">
+                                                    <img src="images/product/new-product/1.png"
+                                                        alt="Single Cavity PET Stretch Blow Moulding Machine">
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="service-content">
+                                            <h3><a href="#">SE - STAR SERIES ENERGY SAVING</a></h3>
+                                           
+                                            <a href="#" class="service-action-btn">
+                                                <span>Inquire Machine</span>
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 02. Economical 2 Cavity -->
+                                <div class="swiper-slide">
+                                    <div class="service-item">
+                                        <div class="service-image">
+                                            <div class="service-badge-wrapper">
+                                                <span class="service-no-pill">01</span>
+                                                <span class="service-cavity-pill"><i class="fa-solid fa-cube"></i>
+                                                    Single Cavity</span>
+                                            </div>
+                                            <a href="#">
+                                                <figure class="image-anime">
+                                                    <img src="images/product/new-product/2.png"
+                                                        alt="Single Cavity PET Stretch Blow Moulding Machine">
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="service-content">
+                                            <h3><a href="#">SE - STAR SERIES ENERGY SAVING</a></h3>
+                                           
+                                            <a href="#" class="service-action-btn">
+                                                <span>Inquire Machine</span>
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 03. Advanced 2 Cavity -->
+                                <div class="swiper-slide">
+                                    <div class="service-item">
+                                        <div class="service-image">
+                                            <div class="service-badge-wrapper">
+                                                <span class="service-no-pill">03</span>
+                                                <span class="service-cavity-pill"><i class="fa-solid fa-microchip"></i>
+                                                    2 Cavity Pro</span>
+                                            </div>
+                                            <a href="#">
+                                                <figure class="image-anime">
+                                                    <img src="images/product/new-product/3.png"
+                                                        alt="Advanced 2 Cavity PET Stretch Blow Moulding Machine">
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="service-content">
+                                            <h3><a href="#">H14AE-ECO SMART ENERGY SAVING</a></h3>
+                                           
+                                            <a href="#" class="service-action-btn">
+                                                <span>Inquire Machine</span>
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 04. Energy Saving 2 Cavity -->
+                                <div class="swiper-slide">
+                                    <div class="service-item">
+                                        <div class="service-image">
+                                            <div class="service-badge-wrapper">
+                                                <span class="service-no-pill">04</span>
+                                                <span class="service-cavity-pill"><i class="fa-solid fa-leaf"></i> 2
+                                                    Cavity Eco</span>
+                                            </div>
+                                            <a href="#">
+                                                <figure class="image-anime">
+                                                    <img src="images/product/new-product/4.png"
+                                                        alt="Energy Saving 2 Cavity PET Stretch Blow Moulding Machine">
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="service-content">
+                                            <h3><a href="#"> S14AE -  ENERGY SAVING 4-CAVITY</a></h3>
+                                            
+                                            <a href="#" class="service-action-btn">
+                                                <span>Inquire Machine</span>
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 05. Premium 4 Cavity -->
+                                <div class="swiper-slide">
+                                    <div class="service-item">
+                                        <div class="service-image">
+                                            <div class="service-badge-wrapper">
+                                                <span class="service-no-pill">05</span>
+                                                <span class="service-cavity-pill"><i class="fa-solid fa-industry"></i> 4
+                                                    Cavity</span>
+                                            </div>
+                                            <a href="#">
+                                                <figure class="image-anime">
+                                                    <img src="images/product/new-product/5.png"
+                                                        alt="Premium 4 Cavity PET Stretch Blow Moulding Machine">
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="service-content">
+                                            <h3><a href="#">ADVANCE SINGLE - CAVITY</a></h3>
+                                           
+                                            <a href="#" class="service-action-btn">
+                                                <span>Inquire Machine</span>
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 06. Energy Saving 4 Cavity -->
+                                
+                            </div>
+                            <div class="services-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="section-footer-text wow fadeInUp" data-wow-delay="0.2s">
+                        <p>From compact single-cavity to high-output multi-cavity systems. <a href="#">Find
+                                your machine</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Machine Range End -->
+      <div class="stats-counter-section">
         <div class="container">
             <div class="row g-4 justify-content-center">
                 <!-- Card 1: Years of Experience -->
@@ -396,412 +555,6 @@
             </div>
         </div>
     </div>
-    <!-- Professional Stats Counter Section End -->
-
-    <!-- Process Section: Transform Preforms into Bottles -->
-    <div class="about-us" id="process">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <div class="about-images">
-                        <div class="about-experience-box wow fadeInUp">
-                            <div class="icon-box"><img src="images/icon-about-experience.svg"
-                                    alt="Engineering Experience"></div>
-                            <div class="about-experience-content">
-                                <h3><span class="counter">25</span>+ Years of Engineering</h3>
-                                <p>Precision PET blow moulding technology.</p>
-                                <span class="exp-badge-pill"><i class="fa-solid fa-award"></i> German-Standard
-                                    Design</span>
-                            </div>
-                        </div>
-                        <div class="about-video-image wow fadeInUp" data-wow-delay="0.2s">
-                            <figure class="image-anime">
-                                <img src="images/about-image-1.jpg" alt="PET Blow Moulding">
-                                <span class="machine-tag-chip"><i class="fa-solid fa-bolt"></i> High Speed</span>
-                            </figure>
-                        </div>
-                        <div class="about-image wow fadeInUp" data-wow-delay="0.3s">
-                            <figure class="image-anime reveal">
-                                <img src="images/about-image-2.jpg" alt="Bottle Production">
-
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="about-us-content">
-                        <div class="section-title">
-                            <h3 class="wow fadeInUp"><i class="fa-solid fa-arrows-spin"></i> The Process</h3>
-                            <h2 class="text-anime-style-2" data-cursor="-opaque">Transform PET Preforms into
-                                <span>High-Quality Bottles</span>
-                            </h2>
-                            <p class="wow fadeInUp" data-wow-delay="0.2s">A quality PET bottle starts with the right
-                                blow moulding technology. SBR Machines are engineered to provide controlled preform
-                                heating, accurate stretching, precise blowing and efficient cooling.</p>
-                        </div>
-                        <div class="about-content-body wow fadeInUp" data-wow-delay="0.4s">
-                            <div class="about-service-item">
-                                <div class="service-item-top">
-                                    <div class="icon-box"><img src="images/icon-about-service-1.svg"
-                                            alt="Controlled Heating"></div>
-                                    <span class="service-step-pill">Stage 01</span>
-                                </div>
-                                <div class="about-service-item-content">
-                                    <h3>Controlled Heating</h3>
-                                    <p>Multi-zone infrared NIR ovens with independent PID controllers heat preforms
-                                        uniformly for efficient stretching.</p>
-                                    <div class="service-micro-tags">
-                                        <span><i class="fa-solid fa-temperature-high"></i> 95°C–115°C PID</span>
-                                        <span><i class="fa-solid fa-bolt"></i> 30% Energy Cut</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="about-service-item">
-                                <div class="service-item-top">
-                                    <div class="icon-box"><img src="images/icon-about-service-2.svg"
-                                            alt="Precision Stretching & Blowing"></div>
-                                    <span class="service-step-pill">Stage 02</span>
-                                </div>
-                                <div class="about-service-item-content">
-                                    <h3>Precision Stretching & Blowing</h3>
-                                    <p>Controlled stretching and high-pressure blowing form the bottle accurately with
-                                        flawless wall consistency.</p>
-                                    <div class="service-micro-tags">
-                                        <span><i class="fa-solid fa-gauge-high"></i> 35–40 Bar High Blow</span>
-                                        <span><i class="fa-solid fa-microchip"></i> Servo Driven</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="about-content-btn wow fadeInUp" data-wow-delay="0.6s">
-                            <a href="#machines" class="btn-default">Explore
-                                Machines</a>
-                            <a href="tel:+918793044005" class="about-phone-btn">
-                                <div class="phone-icon"><i class="fa-solid fa-phone"></i></div>
-                                <div class="phone-meta">
-                                    <span>Technical Support</span>
-                                    <strong>+91 8793044005</strong>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Process Section End -->
-
-    <!-- Machine Range Section (Products) -->
-    <div class="our-services" id="machines">
-        <div class="container">
-            <div class="row section-row align-items-center">
-                <div class="col-lg-12">
-                    <div class="section-title section-title-center">
-                        <h3 class="wow fadeInUp"><i class="fa-solid fa-cubes"></i> Machines</h3>
-                        <h2 class="text-anime-style-2" data-cursor="-opaque">Solutions Designed Around <span>Your
-                                Production</span></h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="services-slider">
-                        <div class="swiper">
-                            <div class="swiper-wrapper">
-                                <!-- 01. Single Cavity -->
-                                <div class="swiper-slide">
-                                    <div class="service-item">
-                                        <div class="service-image">
-                                            <div class="service-badge-wrapper">
-                                                <span class="service-no-pill">01</span>
-                                                <span class="service-cavity-pill"><i class="fa-solid fa-cube"></i>
-                                                    Single Cavity</span>
-                                            </div>
-                                            <a href="#">
-                                                <figure class="image-anime">
-                                                    <img src="images/products/1.png"
-                                                        alt="Single Cavity PET Stretch Blow Moulding Machine">
-                                                </figure>
-                                            </a>
-                                        </div>
-                                        <div class="service-content">
-                                            <h3><a href="#">Single Cavity PET Stretch Blow Moulding
-                                                    Machine</a></h3>
-                                            <p>Flexible solution for controlled production, R&D, product development and
-                                                specialized bottle formats.</p>
-                                            <div class="service-specs-list">
-                                                <span class="service-spec-tag"><i class="fa-solid fa-flask"></i> R&D &
-                                                    Sampling</span>
-                                                <span class="service-spec-tag"><i class="fa-solid fa-check"></i> Custom
-                                                    Bottles</span>
-                                            </div>
-                                            <a href="#" class="service-action-btn">
-                                                <span>Inquire Machine</span>
-                                                <i class="fa-solid fa-arrow-right"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- 02. Economical 2 Cavity -->
-                                <div class="swiper-slide">
-                                    <div class="service-item">
-                                        <div class="service-image">
-                                            <div class="service-badge-wrapper">
-                                                <span class="service-no-pill">02</span>
-                                                <span class="service-cavity-pill"><i class="fa-solid fa-cubes"></i> 2
-                                                    Cavity</span>
-                                            </div>
-                                            <a href="#">
-                                                <figure class="image-anime">
-                                                    <img src="images/products/2.png"
-                                                        alt="Economical 2 Cavity PET Stretch Blow Moulding Machine">
-                                                </figure>
-                                            </a>
-                                        </div>
-                                        <div class="service-content">
-                                            <h3><a href="#">Economical 2 Cavity PET Stretch Blow Moulding
-                                                    Machine</a></h3>
-                                            <p>Cost-effective balance between initial investment, reliable production
-                                                capacity and low operating costs.</p>
-                                            <div class="service-specs-list">
-                                                <span class="service-spec-tag"><i class="fa-solid fa-coins"></i> Low
-                                                    Cost ROI</span>
-                                                <span class="service-spec-tag"><i class="fa-solid fa-wrench"></i> Easy
-                                                    Maintenance</span>
-                                            </div>
-                                            <a href="#" class="service-action-btn">
-                                                <span>Inquire Machine</span>
-                                                <i class="fa-solid fa-arrow-right"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- 03. Advanced 2 Cavity -->
-                                <div class="swiper-slide">
-                                    <div class="service-item">
-                                        <div class="service-image">
-                                            <div class="service-badge-wrapper">
-                                                <span class="service-no-pill">03</span>
-                                                <span class="service-cavity-pill"><i class="fa-solid fa-microchip"></i>
-                                                    2 Cavity Pro</span>
-                                            </div>
-                                            <a href="#">
-                                                <figure class="image-anime">
-                                                    <img src="images/products/3.png"
-                                                        alt="Advanced 2 Cavity PET Stretch Blow Moulding Machine">
-                                                </figure>
-                                            </a>
-                                        </div>
-                                        <div class="service-content">
-                                            <h3><a href="#">Advanced 2 Cavity PET Stretch Blow Moulding
-                                                    Machine</a></h3>
-                                            <p>Higher-performance 2-cavity machine equipped with intelligent PLC
-                                                automation and optimized infrared heating.</p>
-                                            <div class="service-specs-list">
-                                                <span class="service-spec-tag"><i class="fa-solid fa-microchip"></i>
-                                                    Smart PLC</span>
-                                                <span class="service-spec-tag"><i class="fa-solid fa-fire-burner"></i>
-                                                    Multi-Zone IR</span>
-                                            </div>
-                                            <a href="#" class="service-action-btn">
-                                                <span>Inquire Machine</span>
-                                                <i class="fa-solid fa-arrow-right"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- 04. Energy Saving 2 Cavity -->
-                                <div class="swiper-slide">
-                                    <div class="service-item">
-                                        <div class="service-image">
-                                            <div class="service-badge-wrapper">
-                                                <span class="service-no-pill">04</span>
-                                                <span class="service-cavity-pill"><i class="fa-solid fa-leaf"></i> 2
-                                                    Cavity Eco</span>
-                                            </div>
-                                            <a href="#">
-                                                <figure class="image-anime">
-                                                    <img src="images/products/4.png"
-                                                        alt="Energy Saving 2 Cavity PET Stretch Blow Moulding Machine">
-                                                </figure>
-                                            </a>
-                                        </div>
-                                        <div class="service-content">
-                                            <h3><a href="#">Energy Saving 2 Cavity PET Stretch Blow Moulding
-                                                    Machine</a></h3>
-                                            <p>Engineered to cut electricity and air consumption significantly while
-                                                maintaining consistent high bottle quality.</p>
-                                            <div class="service-specs-list">
-                                                <span class="service-spec-tag"><i class="fa-solid fa-bolt"></i> Low kWh
-                                                    / Bottle</span>
-                                                <span class="service-spec-tag"><i class="fa-solid fa-wind"></i> Air
-                                                    Recovery</span>
-                                            </div>
-                                            <a href="#" class="service-action-btn">
-                                                <span>Inquire Machine</span>
-                                                <i class="fa-solid fa-arrow-right"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- 05. Premium 4 Cavity -->
-                                <div class="swiper-slide">
-                                    <div class="service-item">
-                                        <div class="service-image">
-                                            <div class="service-badge-wrapper">
-                                                <span class="service-no-pill">05</span>
-                                                <span class="service-cavity-pill"><i class="fa-solid fa-industry"></i> 4
-                                                    Cavity</span>
-                                            </div>
-                                            <a href="#">
-                                                <figure class="image-anime">
-                                                    <img src="images/products/5.png"
-                                                        alt="Premium 4 Cavity PET Stretch Blow Moulding Machine">
-                                                </figure>
-                                            </a>
-                                        </div>
-                                        <div class="service-content">
-                                            <h3><a href="#">Premium 4 Cavity PET Stretch Blow Moulding
-                                                    Machine</a></h3>
-                                            <p>Heavy-duty, high-capacity system built for continuous industrial bottle
-                                                production and rapid cycle times.</p>
-                                            <div class="service-specs-list">
-                                                <span class="service-spec-tag"><i class="fa-solid fa-gauge-high"></i>
-                                                    High Speed</span>
-                                                <span class="service-spec-tag"><i class="fa-solid fa-shield-halved"></i>
-                                                    24/7 Heavy Duty</span>
-                                            </div>
-                                            <a href="#" class="service-action-btn">
-                                                <span>Inquire Machine</span>
-                                                <i class="fa-solid fa-arrow-right"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- 06. Energy Saving 4 Cavity -->
-                                <div class="swiper-slide">
-                                    <div class="service-item">
-                                        <div class="service-image">
-                                            <div class="service-badge-wrapper">
-                                                <span class="service-no-pill">06</span>
-                                                <span class="service-cavity-pill"><i class="fa-solid fa-leaf"></i> 4
-                                                    Cavity Eco</span>
-                                            </div>
-                                            <a href="#">
-                                                <figure class="image-anime">
-                                                    <img src="images/products/6.png"
-                                                        alt="Energy Saving 4 Cavity PET Stretch Blow Moulding Machine">
-                                                </figure>
-                                            </a>
-                                        </div>
-                                        <div class="service-content">
-                                            <h3><a href="#">Energy Saving 4 Cavity PET Stretch Blow Moulding
-                                                    Machine</a></h3>
-                                            <p>Combines high 4-cavity output with advanced thermal efficiency and
-                                                compressed-air recycling technology.</p>
-                                            <div class="service-specs-list">
-                                                <span class="service-spec-tag"><i class="fa-solid fa-bolt"></i> Eco
-                                                    Savings</span>
-                                                <span class="service-spec-tag"><i class="fa-solid fa-recycle"></i> Air
-                                                    Recycling</span>
-                                            </div>
-                                            <a href="#" class="service-action-btn">
-                                                <span>Inquire Machine</span>
-                                                <i class="fa-solid fa-arrow-right"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- 07. Premium Plus 4 Cavity -->
-                                <div class="swiper-slide">
-                                    <div class="service-item">
-                                        <div class="service-image">
-                                            <div class="service-badge-wrapper">
-                                                <span class="service-no-pill">07</span>
-                                                <span class="service-cavity-pill"><i class="fa-solid fa-star"></i> 4
-                                                    Cavity Plus</span>
-                                            </div>
-                                            <a href="#">
-                                                <figure class="image-anime">
-                                                    <img src="images/products/7.png"
-                                                        alt="Premium Plus 4 Cavity PET Stretch Blow Moulding Machine">
-                                                </figure>
-                                            </a>
-                                        </div>
-                                        <div class="service-content">
-                                            <h3><a href="#">Premium Plus 4 Cavity PET Stretch Blow Moulding
-                                                    Machine</a></h3>
-                                            <p>Flagship 4-cavity model with full servo precision, recipe memory
-                                                touchscreen HMI, and Industry 4.0 connectivity.</p>
-                                            <div class="service-specs-list">
-                                                <span class="service-spec-tag"><i class="fa-solid fa-gear"></i> Full
-                                                    Servo</span>
-                                                <span class="service-spec-tag"><i class="fa-solid fa-network-wired"></i>
-                                                    Industry 4.0</span>
-                                            </div>
-                                            <a href="#" class="service-action-btn">
-                                                <span>Inquire Machine</span>
-                                                <i class="fa-solid fa-arrow-right"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- 08. Energy Saving 6 Cavity -->
-                                <div class="swiper-slide">
-                                    <div class="service-item">
-                                        <div class="service-image">
-                                            <div class="service-badge-wrapper">
-                                                <span class="service-no-pill">08</span>
-                                                <span class="service-cavity-pill"><i
-                                                        class="fa-solid fa-bolt-lightning"></i> 6 Cavity Eco</span>
-                                            </div>
-                                            <a href="#">
-                                                <figure class="image-anime">
-                                                    <img src="images/products/8.png"
-                                                        alt="Energy Saving 6 Cavity PET Stretch Blow Moulding Machine">
-                                                </figure>
-                                            </a>
-                                        </div>
-                                        <div class="service-content">
-                                            <h3><a href="#">Energy Saving 6 Cavity PET Stretch Blow Moulding
-                                                    Machine</a></h3>
-                                            <p>High-speed multi-cavity workhorse designed for mass manufacturing plants
-                                                with ultra-low energy per bottle.</p>
-                                            <div class="service-specs-list">
-                                                <span class="service-spec-tag"><i class="fa-solid fa-gauge-high"></i>
-                                                    12,000+ BPH</span>
-                                                <span class="service-spec-tag"><i class="fa-solid fa-leaf"></i>
-                                                    Ultra-Low Energy</span>
-                                            </div>
-                                            <a href="#" class="service-action-btn">
-                                                <span>Inquire Machine</span>
-                                                <i class="fa-solid fa-arrow-right"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="services-pagination"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-12">
-                    <div class="section-footer-text wow fadeInUp" data-wow-delay="0.2s">
-                        <p>From compact single-cavity to high-output multi-cavity systems. <a href="#">Find
-                                your machine</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Machine Range End -->
 
     <!-- Technology Features Section -->
     <div class="our-awards">
@@ -940,114 +693,69 @@
 
 
 
-    <!-- Applications Section -->
-    <div class="our-goals">
+    <!-- Clients Section -->
+    <div class="our-clients-section">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <div class="our-goals-content">
-                        <div class="section-title">
-                            <h3 class="wow fadeInUp">Applications</h3>
-                            <h2 class="text-anime-style-2" data-cursor="-opaque">Engineered for Every Bottle <span>and
-                                    Industry</span></h2>
-                            <p class="wow fadeInUp" data-wow-delay="0.2s">From drinking water to edible oil, personal
-                                care to FMCG – SBR Machines supports diverse PET packaging applications.</p>
-                        </div>
-                        <div class="goals-content-body wow fadeInUp" data-wow-delay="0.4s">
-                            <div class="goals-item">
-                                <div class="icon-box"><img src="images/icon-goals-item-1.svg" alt=""></div>
-                                <div class="goals-item-content">
-                                    <h3>Beverage & Water</h3>
-                                    <p>High-efficiency bottle manufacturing for water, soft drinks and juices.</p>
-                                </div>
-                            </div>
-                            <div class="goals-item">
-                                <div class="icon-box"><img src="images/icon-goals-item-2.svg" alt=""></div>
-                                <div class="goals-item-content">
-                                    <h3>Food & Personal Care</h3>
-                                    <p>PET containers for edible oil, shampoos, lotions and household products.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="goals-content-footer wow fadeInUp" data-wow-delay="0.6s">
-                            <div class="goals-content-btn"><a href="#" class="btn-default">View All
-                                    Applications</a></div>
-                            <div class="contact-now-box">
-                                <div class="icon-box"><img src="images/icon-phone-accent.svg" alt=""></div>
-                                <div class="contact-now-box-content">
-                                    <span>Talk to Expert</span>
-                                    <p><a href="tel:+918793044005">+91 8793044005</a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="our-goals-images">
-                        <div class="goals-image-box">
-                            <div class="goals-img-1">
-                                <figure class="image-anime reveal"><img src="images/application-1.png"
-                                        alt="Water Bottles"></figure>
-                            </div>
-                            <div class="goals-img-2">
-                                <figure class="image-anime reveal"><img src="images/application-2.png" alt="Beverage">
-                                </figure>
-                            </div>
-                        </div>
-                        <div class="goals-image-box">
-                            <div class="goals-img-3">
-                                <figure class="image-anime reveal"><img src="images/application-3.png" alt="Edible Oil">
-                                </figure>
-                            </div>
-                            <div class="goals-img-4">
-                                <figure class="image-anime reveal"><img src="images/application-4.png"
-                                        alt="Personal Care"></figure>
-                            </div>
-                        </div>
-                        <div class="contact-now-circle"><a href="#"><img src="images/contact-now-circle.png"
-                                    alt="Contact"></a></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Applications End -->
-
-    <!-- Production Facts Section -->
-    <div class="our-facts bg-section dark-section">
-        <div class="container">
-            <div class="row">
+            <div class="row section-row align-items-center">
                 <div class="col-lg-12">
-                    <div class="our-facts-box">
-                        <div class="our-facts-content">
-                            <div class="section-title">
-                                <h3 class="wow fadeInUp">Production Facts</h3>
-                                <h2 class="text-anime-style-2" data-cursor="-opaque">Built for Continuous
-                                    <span>Industrial Production</span>
-                                </h2>
-                                <p class="wow fadeInUp" data-wow-delay="0.2s">Heavy-duty structural design, robust mould
-                                    clamping, precision components and reliable systems for long-term operation.</p>
-                            </div>
-                            <div class="our-facts-list wow fadeInUp" data-wow-delay="0.4s">
-                                <ul>
-                                    <li>Heavy-duty machine frame</li>
-                                    <li>Centralized lubrication</li>
-                                    <li>UPS backup for control system</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="our-facts-image">
-                            <figure><img src="images/facts-image.png" alt="Production Line"></figure>
-                            <div class="contact-now-circle"><a href="#"><img src="images/contact-now-circle.png"
-                                        alt="Contact"></a></div>
-                        </div>
+                    <div class="section-title section-title-center">
+                        <h3 class="wow fadeInUp">Our Clients</h3>
+                        <h2 class="text-anime-style-2" data-cursor="-opaque">Trusted by <span>Industry Leaders</span></h2>
                     </div>
                 </div>
-
             </div>
         </div>
+
+        <div class="clients-slider-wrapper">
+            <!-- Row 1: Left to Right (Logos 1 to 20) -->
+            <div class="client-marquee-row marquee-to-right">
+                <div class="client-marquee-track">
+                    <?php for ($i = 1; $i <= 20; $i++): ?>
+                        <div class="client-logo-item">
+                            <div class="client-logo-card">
+                                <img src="images/clients/<?= $i ?>.png" alt="Client Logo <?= $i ?>" loading="lazy">
+                            </div>
+                        </div>
+                    <?php endfor; ?>
+                </div>
+                <div class="client-marquee-track" aria-hidden="true">
+                    <?php for ($i = 1; $i <= 20; $i++): ?>
+                        <div class="client-logo-item">
+                            <div class="client-logo-card">
+                                <img src="images/clients/<?= $i ?>.png" alt="Client Logo <?= $i ?>" loading="lazy">
+                            </div>
+                        </div>
+                    <?php endfor; ?>
+                </div>
+            </div>
+
+            <!-- Row 2: Right to Left (Logos 21 to 40) -->
+            <div class="client-marquee-row marquee-to-left">
+                <div class="client-marquee-track">
+                    <?php for ($i = 21; $i <= 37; $i++): ?>
+                        <div class="client-logo-item">
+                            <div class="client-logo-card">
+                                <img src="images/clients/<?= $i ?>.png" alt="Client Logo <?= $i ?>" loading="lazy">
+                            </div>
+                        </div>
+                    <?php endfor; ?>
+                </div>
+                <div class="client-marquee-track" aria-hidden="true">
+                    <?php for ($i = 21; $i <= 37; $i++): ?>
+                        <div class="client-logo-item">
+                            <div class="client-logo-card">
+                                <img src="images/clients/<?= $i ?>.png" alt="Client Logo <?= $i ?>" loading="lazy">
+                            </div>
+                        </div>
+                    <?php endfor; ?>
+                </div>
+            </div>
+
+            <!-- Row 3: Left to Right (Logos 41 to 60) -->
+           
+        </div>
     </div>
-    <!-- Production Facts End -->
+    <!-- Clients Section End -->
 
     <!-- Pricing / Selection Guide -->
     <div class="our-pricing">
@@ -1074,7 +782,7 @@
                             </ul>
                         </div>
                         <div class="pricing-tab-item tab-pane fade show active" id="monthly" role="tabpanel">
-                            <div class="row align-items-center">
+                            <div class="row">
                                 <div class="col-lg-4 col-md-6">
                                     <div class="pricing-item wow fadeInUp">
                                         <div class="pricing-header">
@@ -1082,7 +790,7 @@
                                             <p>Single Cavity PET Stretch Blow Moulding Machine</p>
                                         </div>
                                         <div class="pricing-price">
-                                            <h2>Ideal for <sub>R&D & Custom Bottles</sub></h2>
+                                            <h2>R&D <sub>& Custom Bottles</sub></h2>
                                         </div>
                                         <div class="pricing-list">
                                             <ul>
@@ -1138,7 +846,7 @@
                             </div>
                         </div>
                         <div class="pricing-tab-item tab-pane fade" id="yearly" role="tabpanel">
-                            <div class="row align-items-center">
+                            <div class="row">
                                 <div class="col-lg-4 col-md-6">
                                     <div class="pricing-item">
                                         <div class="pricing-header">
@@ -1362,77 +1070,7 @@
     <!-- Insights End -->
 
     <!-- Footer -->
-    <footer class="main-footer bg-section dark-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-12">
-                    <div class="about-footer">
-                        <div class="footer-logo"><img src="images/sbr.png" alt="SBR Machines"></div>
-                        <div class="about-footer-content">
-                            <p>Advanced PET Stretch Blow Moulding Machines – precision, productivity, performance.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-5">
-                    <div class="footer-links">
-                        <h3>Quick Links</h3>
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#machines">Machines</a></li>
-
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-7">
-                    <div class="footer-links">
-                        <h3>Contact</h3>
-                        <div class="footer-contact-item">
-                            <div class="icon-box"><img src="images/icon-location-accent.svg" alt=""></div>
-                            <div class="footer-contact-content">
-                                <p>Plot No-PAP V-90/2 & 3, PHASE-II MIDC Chakan Industrial Area, Vasuli, Tal, Khed,
-                                    Maharashtra 410501</p>
-                            </div>
-                        </div>
-                        <div class="footer-contact-item">
-                            <div class="icon-box"><img src="images/icon-mail-accent.svg" alt=""></div>
-                            <div class="footer-contact-content">
-                                <p><a href="mailto:sales@sbrmachines.com">sales@sbrmachines.com</a></p>
-                            </div>
-                        </div>
-                        <div class="footer-contact-item">
-                            <div class="icon-box"><img src="images/icon-phone-accent.svg" alt=""></div>
-                            <div class="footer-contact-content">
-                                <p><a href="tel:+91 8793044005">+91 8793044005</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-12">
-                    <div class="footer-links footer-newsletter-form">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3113.374533050657!2d73.76208887107053!3d18.78190372218426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b5002ddcdb65%3A0x97d137bd022e66ea!2sSBR%20MACHINES%20PVT%20LTD%20(Mother%20Plant)!5e1!3m2!1sen!2sin!4v1788847443383!5m2!1sen!2sin"
-                            width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="strict-origin-when-cross-origin"></iframe>
-                    </div>
-                </div>
-                <div class="col-lg-12">
-                    <div class="footer-copyright">
-                        <div class="footer-copyright-text">
-                            <p>Copyright © 2026 SBR Machines. All Rights Reserved.</p>
-
-                        </div>
-                        <div class="footer-social-links">
-                            <p class="text-light">Design & Developed By <a href="https://www.weblinkservices.net/"><img
-                                        src="https://www.weblinkservices.net/assets-web/logo-main.png" alt=""
-                                        height="30px"></a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <?php include "footer.php" ?>
     <!-- Footer End -->
 
     <!-- Scripts -->

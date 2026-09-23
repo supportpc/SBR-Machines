@@ -1240,7 +1240,7 @@ header.main-header .header-sticky.active {
 .hero-cta-box {
 	position: relative;
 	padding: 0;
-	margin-top: -65px;
+	margin-top: 0px;
 	z-index: 25;
 	margin-bottom: 40px;
 }
@@ -1867,7 +1867,7 @@ header.main-header .header-sticky.active {
 
 .about-us-content .section-title h2 {
 	font-family: var(--accent-font);
-	font-size: 38px;
+	font-size: 30px;
 	font-weight: 800;
 	line-height: 1.25;
 	color: var(--primary-color);
@@ -3121,6 +3121,218 @@ header.main-header .header-sticky.active {
 }
 
 /************************************/
+/***     10b. Our Clients Section ***/
+/************************************/
+
+.our-clients-section {
+	padding: 70px 0 65px;
+	background: #fbfbfc;
+	border-top: 1px solid #f0f1f3;
+	border-bottom: 1px solid #f0f1f3;
+	position: relative;
+	overflow: hidden;
+}
+
+.our-clients-section .section-title {
+	margin-bottom: 40px;
+}
+
+.clients-slider-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 18px;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+	-webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+}
+
+.client-marquee-row {
+	display: flex;
+	width: 100%;
+	overflow: hidden;
+	user-select: none;
+	gap: 18px;
+}
+
+.client-marquee-track {
+	display: flex;
+	flex-shrink: 0;
+	align-items: center;
+	gap: 18px;
+	will-change: transform;
+}
+
+/* Row 1 & 3: Left to Right */
+.client-marquee-row.marquee-to-right .client-marquee-track {
+	animation: marqueeScrollRight 40s linear infinite;
+}
+
+/* Row 2: Right to Left */
+.client-marquee-row.marquee-to-left .client-marquee-track {
+	animation: marqueeScrollLeft 38s linear infinite;
+}
+
+.client-marquee-row:hover .client-marquee-track {
+	animation-play-state: paused;
+}
+
+.client-logo-item {
+	flex: 0 0 auto;
+}
+
+.client-logo-card {
+	width: 175px;
+	height: 85px;
+	background: #ffffff;
+	border: 1px solid #eaedf1;
+	border-radius: 14px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px 18px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+	transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+	cursor: pointer;
+}
+
+.client-logo-card img {
+	max-width: 100%;
+
+	width: auto;
+	height: auto;
+	object-fit: contain;
+
+
+	transition: all 0.3s ease;
+}
+
+.client-logo-card:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 10px 22px rgba(235, 87, 36, 0.14);
+	border-color: rgba(235, 87, 36, 0.38);
+	background: #ffffff;
+}
+
+.client-logo-card:hover img {
+	filter: grayscale(0%);
+	opacity: 1;
+	transform: scale(1.06);
+}
+
+@keyframes marqueeScrollRight {
+	0% {
+		transform: translateX(calc(-100% - 18px));
+	}
+
+	100% {
+		transform: translateX(0%);
+	}
+}
+
+@keyframes marqueeScrollLeft {
+	0% {
+		transform: translateX(0%);
+	}
+
+	100% {
+		transform: translateX(calc(-100% - 18px));
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	.our-clients-section {
+		padding: 50px 0;
+	}
+
+	.clients-slider-wrapper,
+	.client-marquee-row,
+	.client-marquee-track {
+		gap: 14px;
+	}
+
+	.client-logo-card {
+		width: 145px;
+		height: 72px;
+		padding: 8px 14px;
+		border-radius: 12px;
+	}
+
+	.client-logo-card img {
+		max-height: 42px;
+	}
+
+	@keyframes marqueeScrollRight {
+		0% {
+			transform: translateX(calc(-100% - 14px));
+		}
+
+		100% {
+			transform: translateX(0%);
+		}
+	}
+
+	@keyframes marqueeScrollLeft {
+		0% {
+			transform: translateX(0%);
+		}
+
+		100% {
+			transform: translateX(calc(-100% - 14px));
+		}
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.our-clients-section {
+		padding: 40px 0;
+	}
+
+	.clients-slider-wrapper {
+		gap: 12px;
+		mask-image: linear-gradient(to right, transparent, black 4%, black 96%, transparent);
+		-webkit-mask-image: linear-gradient(to right, transparent, black 4%, black 96%, transparent);
+	}
+
+	.client-marquee-row,
+	.client-marquee-track {
+		gap: 12px;
+	}
+
+	.client-logo-card {
+		width: 125px;
+		height: 62px;
+		padding: 6px 12px;
+		border-radius: 10px;
+	}
+
+	.client-logo-card img {
+		max-height: 36px;
+	}
+
+	@keyframes marqueeScrollRight {
+		0% {
+			transform: translateX(calc(-100% - 12px));
+		}
+
+		100% {
+			transform: translateX(0%);
+		}
+	}
+
+	@keyframes marqueeScrollLeft {
+		0% {
+			transform: translateX(0%);
+		}
+
+		100% {
+			transform: translateX(calc(-100% - 12px));
+		}
+	}
+}
+
+/************************************/
 /***       11. Our Pricing css	  ***/
 /************************************/
 
@@ -3177,19 +3389,37 @@ header.main-header .header-sticky.active {
 	color: var(--white-color);
 }
 
+.pricing-tab-item .row {
+	align-items: stretch;
+}
+
+.pricing-tab-item .row>[class*="col-"] {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 30px;
+}
+
 .pricing-item {
 	border: 1px solid var(--divider-color);
 	border-radius: 30px;
-	height: calc(100% - 30px);
-	margin-bottom: 30px;
+	height: 100%;
+	margin-bottom: 0;
 	padding: 40px 35px;
 	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	transition: all 0.3s ease-in-out;
 }
 
 .pricing-header {
 	border-bottom: 1px solid var(--divider-color);
-	padding-bottom: 30px;
-	margin-bottom: 30px;
+	padding-bottom: 25px;
+	margin-bottom: 25px;
+	min-height: 112px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
 }
 
 .pricing-header h3 {
@@ -3200,24 +3430,37 @@ header.main-header .header-sticky.active {
 
 .pricing-header p {
 	margin-bottom: 0;
+	line-height: 1.5;
+	font-size: 15px;
 }
 
 .pricing-price {
 	background-color: var(--secondary-color);
 	text-align: center;
-	border-radius: 10px;
-	padding: 15px;
-	margin-bottom: 30px;
+	border-radius: 12px;
+	padding: 12px 15px;
+	margin-bottom: 25px;
+	min-height: 72px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .pricing-price h2 {
-	font-size: 32px;
+	font-size: 26px;
 	font-weight: 600;
 	color: var(--primary-color);
+	margin: 0;
+	line-height: 1.25;
+	display: inline-flex;
+	align-items: baseline;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 6px;
 }
 
 .pricing-price h2 sub {
-	font-size: 16px;
+	font-size: 15px;
 	font-weight: 500;
 	color: var(--primary-color);
 	bottom: 0;
@@ -3225,19 +3468,26 @@ header.main-header .header-sticky.active {
 
 .pricing-list {
 	margin-bottom: 30px;
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
 }
 
 .pricing-list ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
 }
 
 .pricing-list ul li {
 	position: relative;
 	line-height: 1.5em;
 	padding-left: 30px;
-	margin-bottom: 15px;
+	margin-bottom: 0;
+	font-size: 15px;
 }
 
 .pricing-list ul li:last-child {
@@ -3248,16 +3498,21 @@ header.main-header .header-sticky.active {
 	content: '\f058';
 	font-family: 'FontAwesome';
 	position: absolute;
-	top: 0;
+	top: 1px;
 	left: 0;
 	font-size: 18px;
 	color: var(--accent-color);
 }
 
+.pricing-btn {
+	margin-top: auto;
+}
+
 .pricing-btn .btn-default {
 	width: 100%;
 	text-align: center;
-	padding: 17px 20px;
+	padding: 16px 20px;
+	display: block;
 }
 
 .pricing-btn .btn-default::before {
@@ -3297,6 +3552,11 @@ header.main-header .header-sticky.active {
 	background: var(--white-color);
 	color: var(--accent-color);
 	font-weight: 600;
+}
+
+.pricing-item.highlighted-box .pricing-btn .btn-default.btn-highlighted:hover {
+	background: var(--accent-color);
+	color: var(--white-color);
 }
 
 .pricing-benefit-list {
@@ -6633,14 +6893,16 @@ header.main-header .header-sticky.active {
 	.pricing-header {
 		padding-bottom: 20px;
 		margin-bottom: 20px;
+		min-height: auto;
 	}
 
 	.pricing-price {
 		padding: 12px;
+		min-height: auto;
 	}
 
 	.pricing-price h2 {
-		font-size: 34px;
+		font-size: 24px;
 	}
 
 	.pricing-list ul li {
