@@ -13,11 +13,11 @@
                     <div class="footer-links">
                         <h3>Quick Links</h3>
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#machines">Machines</a></li>
-
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="index.php">Home</a></li>
+                            <li><a href="about.php">About Us</a></li>
+                            <li><a href="index.php#machines">Machines</a></li>
+                            <li><a href="gallery.php">Gallery</a></li>
+                            <li><a href="contact.php">Contact</a></li>
                         </ul>
                     </div>
                 </div>

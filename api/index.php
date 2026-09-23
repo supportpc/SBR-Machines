@@ -230,11 +230,11 @@
                                 <p>From 1,000 to 12,000+ Bottles Per Hour. Get machine specifications, bottle mold
                                     consultation, and complete line pricing.</p>
                                 <div class="expert-cta-buttons">
-                                    <a href="#" class="btn-default btn-highlighted">
+                                    <a href="contact.php" class="btn-default btn-highlighted">
                                         <span>Get Instant Quote</span>
                                         <i class="fa-solid fa-arrow-right"></i>
                                     </a>
-                                    <a href="#" class="btn-contact-alt">
+                                    <a href="contact.php" class="btn-contact-alt">
                                         <i class="fa-solid fa-comments"></i>
                                         <span>Talk to Engineer</span>
                                     </a>
@@ -316,18 +316,18 @@
                                                 <span class="service-cavity-pill"><i class="fa-solid fa-cube"></i>
                                                     Single Cavity</span>
                                             </div>
-                                            <a href="#">
+                                            <a href="se-star-series-energy-saving.php">
                                                 <figure class="image-anime">
                                                     <img src="images/product/new-product/1.png"
-                                                        alt="Single Cavity PET Stretch Blow Moulding Machine">
+                                                        alt="SE - STAR SERIES ENERGY SAVING">
                                                 </figure>
                                             </a>
                                         </div>
                                         <div class="service-content">
-                                            <h3><a href="#">SE - STAR SERIES ENERGY SAVING</a></h3>
+                                            <h3><a href="se-star-series-energy-saving.php">SE - STAR SERIES ENERGY SAVING</a></h3>
                                            
-                                            <a href="#" class="service-action-btn">
-                                                <span>Inquire Machine</span>
+                                            <a href="se-star-series-energy-saving.php" class="service-action-btn">
+                                                <span>View Machine</span>
                                                 <i class="fa-solid fa-arrow-right"></i>
                                             </a>
                                         </div>
@@ -370,18 +370,18 @@
                                                 <span class="service-cavity-pill"><i class="fa-solid fa-microchip"></i>
                                                     2 Cavity Pro</span>
                                             </div>
-                                            <a href="#">
+                                            <a href="h14ae-eco-smart-energy-saving.php">
                                                 <figure class="image-anime">
                                                     <img src="images/product/new-product/3.png"
-                                                        alt="Advanced 2 Cavity PET Stretch Blow Moulding Machine">
+                                                        alt="H14AE-ECO SMART ENERGY SAVING">
                                                 </figure>
                                             </a>
                                         </div>
                                         <div class="service-content">
-                                            <h3><a href="#">H14AE-ECO SMART ENERGY SAVING</a></h3>
+                                            <h3><a href="h14ae-eco-smart-energy-saving.php">H14AE-ECO SMART ENERGY SAVING</a></h3>
                                            
-                                            <a href="#" class="service-action-btn">
-                                                <span>Inquire Machine</span>
+                                            <a href="h14ae-eco-smart-energy-saving.php" class="service-action-btn">
+                                                <span>View Machine</span>
                                                 <i class="fa-solid fa-arrow-right"></i>
                                             </a>
                                         </div>
@@ -397,18 +397,18 @@
                                                 <span class="service-cavity-pill"><i class="fa-solid fa-leaf"></i> 2
                                                     Cavity Eco</span>
                                             </div>
-                                            <a href="#">
+                                            <a href="s14ae-energy-saving-4-cavity.php">
                                                 <figure class="image-anime">
                                                     <img src="images/product/new-product/4.png"
-                                                        alt="Energy Saving 2 Cavity PET Stretch Blow Moulding Machine">
+                                                        alt="S14AE - ENERGY SAVING 4-CAVITY">
                                                 </figure>
                                             </a>
                                         </div>
                                         <div class="service-content">
-                                            <h3><a href="#"> S14AE -  ENERGY SAVING 4-CAVITY</a></h3>
+                                            <h3><a href="s14ae-energy-saving-4-cavity.php">S14AE - ENERGY SAVING 4-CAVITY</a></h3>
                                             
-                                            <a href="#" class="service-action-btn">
-                                                <span>Inquire Machine</span>
+                                            <a href="s14ae-energy-saving-4-cavity.php" class="service-action-btn">
+                                                <span>View Machine</span>
                                                 <i class="fa-solid fa-arrow-right"></i>
                                             </a>
                                         </div>
@@ -421,21 +421,20 @@
                                         <div class="service-image">
                                             <div class="service-badge-wrapper">
                                                 <span class="service-no-pill">05</span>
-                                                <span class="service-cavity-pill"><i class="fa-solid fa-industry"></i> 4
-                                                    Cavity</span>
+                                                <span class="service-cavity-pill"><i class="fa-solid fa-industry"></i> Single Cavity (5L-10L)</span>
                                             </div>
-                                            <a href="#">
+                                            <a href="advance-single-cavity.php">
                                                 <figure class="image-anime">
                                                     <img src="images/product/new-product/5.png"
-                                                        alt="Premium 4 Cavity PET Stretch Blow Moulding Machine">
+                                                        alt="ADVANCE SINGLE - CAVITY">
                                                 </figure>
                                             </a>
                                         </div>
                                         <div class="service-content">
-                                            <h3><a href="#">ADVANCE SINGLE - CAVITY</a></h3>
+                                            <h3><a href="advance-single-cavity.php">ADVANCE SINGLE - CAVITY</a></h3>
                                            
-                                            <a href="#" class="service-action-btn">
-                                                <span>Inquire Machine</span>
+                                            <a href="advance-single-cavity.php" class="service-action-btn">
+                                                <span>View Machine</span>
                                                 <i class="fa-solid fa-arrow-right"></i>
                                             </a>
                                         </div>
@@ -941,7 +940,7 @@
                                 preventive maintenance, troubleshooting and spare parts.</p>
                         </div>
                         <div class="cta-box-body wow fadeInUp" data-wow-delay="0.4s">
-                            <div class="cta-box-btn"><a href="#" class="btn-default">Contact Support</a>
+                            <div class="cta-box-btn"><a href="contact.php" class="btn-default">Contact Support</a>
                             </div>
                             <span>or</span>
                             <div class="contact-now-box">

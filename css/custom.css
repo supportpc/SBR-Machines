@@ -4151,7 +4151,7 @@ header.main-header .header-sticky.active {
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: 95% auto;
-	padding: 140px 0;
+	padding: 30px 0;
 }
 
 .page-header-box {
@@ -4190,7 +4190,7 @@ header.main-header .header-sticky.active {
 }
 
 .about-us.page-about-us {
-	padding: 100px 0;
+	padding: 15px 0;
 }
 
 .our-approach {
