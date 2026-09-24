@@ -1,0 +1,1503 @@
+/* ==========================================================================
+   SBR Machines - Home Page Specialized Stylesheet
+   Implements requirements:
+   1. Brand header with company name next to logo
+   2. Sticky mobile taskbar with Logo, Company Name, 'Get in Touch', and Menu
+   4. About SBR Plant Info + Director/Sir Photo + Awards Showcase
+   5. Our Vision
+   6. Our Mission
+   7. Range of Products with Model & Cavity Checker
+   8. Customer Care (1. Service & Support, 2. Contact Us Now)
+   9. Spares & Training
+   10. Counters (12+ Years, 1200+ Installations, Exported Countries)
+   11. Left Scroll-to-Top Arrow & Right Floating Quotation Button
+   12. Footer with Facebook, Instagram, Company Name, Year & Address
+   13. English / Hindi Language Switcher
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Point 1 & 2: Topbar, Header, Logo with Company Name, Sticky Mobile Taskbar
+   -------------------------------------------------------------------------- */
+.sbr-topbar {
+    background: #09121d !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+    padding: 7px 0 !important;
+    font-size: 13px !important;
+    line-height: 1.4 !important;
+    color: #cbd5e1 !important;
+    position: relative;
+    z-index: 101;
+}
+
+.sbr-topbar::before {
+    display: none !important;
+}
+
+.topbar-contact-info ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 22px;
+}
+
+.topbar-contact-info ul li {
+    display: inline-flex;
+    align-items: center;
+    font-size: 13px;
+    color: #cbd5e1;
+}
+
+.topbar-contact-link {
+    color: #e2e8f0 !important;
+    text-decoration: none !important;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.2s ease;
+}
+
+.topbar-contact-link:hover {
+    color: #ff5e14 !important;
+}
+
+.topbar-plant-tag {
+    color: #94a3b8;
+    font-size: 12.5px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.topbar-lang-tab {
+    background: rgba(255, 255, 255, 0.08) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    color: #ffffff !important;
+    padding: 4px 12px !important;
+    font-size: 12px !important;
+    border-radius: 20px !important;
+    transition: all 0.25s ease !important;
+}
+
+.topbar-lang-tab:hover {
+    background: #ff5e14 !important;
+    border-color: #ff5e14 !important;
+    color: #ffffff !important;
+    box-shadow: 0 2px 10px rgba(255, 94, 20, 0.4) !important;
+}
+
+.topbar-lang-tab i {
+    color: #ff5e14;
+    transition: color 0.25s ease;
+}
+
+.topbar-lang-tab:hover i {
+    color: #ffffff;
+}
+
+.topbar-social-links ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 12px;
+}
+
+.topbar-social-links ul li {
+    border-right: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.topbar-social-links ul li a i {
+    color: #94a3b8 !important;
+    font-size: 14px !important;
+    transition: color 0.2s ease;
+}
+
+.topbar-social-links ul li a:hover i {
+    color: #ff5e14 !important;
+}
+
+/* Navbar Brand & Logo */
+.navbar-brand {
+    display: flex !important;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+.brand-logo-img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover .brand-logo-img {
+    transform: scale(1.05);
+}
+
+.brand-text-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.brand-title {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    color: #0b1a30;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+/* Navbar Menu Wrapper - Spacious & No Wrapping */
+.main-menu .nav-menu-wrapper {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.main-menu .nav-menu-wrapper > ul {
+    align-items: center;
+    display: inline-flex;
+    gap: 2px;
+}
+
+.main-menu ul li a {
+    white-space: nowrap !important;
+    padding: 17px 11px !important;
+    font-size: 15px !important;
+}
+
+/* Language Switcher Button (Shared) */
+.lang-toggle-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: #f0f4f9;
+    border: 1px solid #d4deec;
+    border-radius: 20px;
+    padding: 6px 14px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #0b1a30;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+    user-select: none;
+    white-space: nowrap;
+}
+
+.lang-toggle-btn:hover {
+    background: #ff5e14;
+    border-color: #ff5e14;
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(255, 94, 20, 0.3);
+}
+
+.lang-toggle-btn i {
+    font-size: 14px;
+    color: #ff5e14;
+    transition: color 0.3s ease;
+}
+
+.lang-toggle-btn:hover i {
+    color: #ffffff;
+}
+
+/* Mobile Header Actions */
+.header-mobile-actions {
+    display: none;
+    align-items: center;
+    gap: 8px;
+}
+
+.header-get-in-touch {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: linear-gradient(135deg, #ff5e14, #ff7e3d);
+    color: #ffffff !important;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none !important;
+    box-shadow: 0 4px 10px rgba(255, 94, 20, 0.25);
+    white-space: nowrap;
+    transition: all 0.3s ease;
+}
+
+.header-get-in-touch:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(255, 94, 20, 0.35);
+    color: #ffffff !important;
+}
+
+.header-get-in-touch i {
+    font-size: 13px;
+}
+
+/* Mobile Sticky Taskbar Enforcement */
+@media (max-width: 991px) {
+    header.main-header {
+        position: relative;
+        z-index: 9999;
+    }
+
+    header.main-header .header-sticky {
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        width: 100% !important;
+        background: #ffffff !important;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12) !important;
+        transform: none !important;
+        transition: none !important;
+        z-index: 9999 !important;
+        padding: 6px 0 !important;
+    }
+
+    /* Prevent content from hiding behind fixed header */
+    body {
+        padding-top: 76px !important;
+    }
+
+    .brand-logo-img {
+        width: 52px;
+        height: 52px;
+    }
+
+    .brand-title {
+        font-size: 15px;
+        font-weight: 800;
+    }
+
+    .brand-subtitle {
+        font-size: 9px;
+    }
+
+    .header-mobile-actions {
+        display: flex !important;
+        margin-left: auto;
+    }
+
+    .main-header .navbar-toggle {
+        display: flex;
+        align-items: center;
+        margin-left: 4px;
+    }
+
+    .header-contact-btn {
+        display: none !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-get-in-touch .git-text {
+        display: none;
+    }
+    .header-get-in-touch {
+        width: 36px;
+        height: 36px;
+        padding: 0;
+        justify-content: center;
+        border-radius: 50%;
+    }
+    .brand-subtitle {
+        display: none;
+    }
+    .brand-title {
+        font-size: 14px;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   Point 10: Counter / Stats Section (12+ Years, 1200+ Installations, Countries)
+   -------------------------------------------------------------------------- */
+.sbr-stats-section {
+    padding: 50px 0 35px;
+    background: linear-gradient(180deg, #f7f9fc 0%, #edf2f7 100%);
+    position: relative;
+    border-top: 1px solid #e2e8f0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.sbr-stat-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 30px 24px;
+    box-shadow: 0 10px 30px rgba(11, 26, 48, 0.06);
+    border: 1px solid rgba(226, 232, 240, 0.8);
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+
+.sbr-stat-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: #ff5e14;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.sbr-stat-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(255, 94, 20, 0.12);
+    border-color: rgba(255, 94, 20, 0.3);
+}
+
+.sbr-stat-card:hover::before {
+    opacity: 1;
+}
+
+.sbr-stat-icon-wrap {
+    width: 60px;
+    height: 60px;
+    border-radius: 14px;
+    background: rgba(255, 94, 20, 0.1);
+    color: #ff5e14;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    margin-bottom: 18px;
+    transition: all 0.3s ease;
+}
+
+.sbr-stat-card:hover .sbr-stat-icon-wrap {
+    background: #ff5e14;
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+.sbr-stat-num-box {
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+    margin-bottom: 8px;
+}
+
+.sbr-stat-number {
+    font-size: 42px;
+    font-weight: 800;
+    color: #0b1a30;
+    line-height: 1;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.sbr-stat-plus {
+    font-size: 32px;
+    font-weight: 800;
+    color: #ff5e14;
+}
+
+.sbr-stat-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1a2a40;
+    margin-bottom: 6px;
+    line-height: 1.3;
+}
+
+.sbr-stat-desc {
+    font-size: 13px;
+    color: #64748b;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Country Tags Pill Grid */
+.country-tags-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 12px;
+}
+
+.country-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 10px;
+    background: #f1f5f9;
+    color: #334155;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    border: 1px solid #e2e8f0;
+    transition: all 0.2s ease;
+}
+
+.country-pill:hover {
+    background: #ff5e14;
+    color: #ffffff;
+    border-color: #ff5e14;
+}
+
+/* --------------------------------------------------------------------------
+   Point 4: About SBR, Plant Info, Director/Sir Photo, Awards
+   -------------------------------------------------------------------------- */
+.sbr-about-director-section {
+    padding: 70px 0;
+    background: #ffffff;
+    position: relative;
+}
+
+.sbr-plant-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 94, 20, 0.1);
+    color: #ff5e14;
+    padding: 6px 16px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 15px;
+}
+
+.director-card-wrap {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 45px rgba(11, 26, 48, 0.12);
+    border: 1px solid #e2e8f0;
+    background: #ffffff;
+}
+
+.director-img-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+}
+
+.director-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    transition: transform 0.5s ease;
+}
+
+.director-card-wrap:hover .director-img-container img {
+    transform: scale(1.03);
+}
+
+.director-badge-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: linear-gradient(0deg, rgba(11, 26, 48, 0.95) 0%, rgba(11, 26, 48, 0.7) 70%, rgba(11, 26, 48, 0) 100%);
+    color: #ffffff;
+}
+
+.director-badge-overlay h4 {
+    font-size: 20px;
+    font-weight: 800;
+    color: #ffffff;
+    margin: 0 0 4px;
+}
+
+.director-badge-overlay p {
+    font-size: 13px;
+    color: #ff7e3d;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin: 0;
+}
+
+.director-quote-box {
+    padding: 20px;
+    background: #f8fafc;
+    border-top: 1px solid #e2e8f0;
+}
+
+.director-quote-box p {
+    font-size: 14px;
+    font-style: italic;
+    color: #475569;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.plant-spec-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 20px;
+}
+
+.plant-spec-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    background: rgba(255, 94, 20, 0.1);
+    color: #ff5e14;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+.plant-spec-info h5 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #0b1a30;
+    margin: 0 0 4px;
+}
+
+.plant-spec-info p {
+    font-size: 13px;
+    color: #64748b;
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* Awards Showcase Section */
+.sbr-awards-wrapper {
+    margin-top: 45px;
+    padding: 30px;
+    background: #f8fafc;
+    border-radius: 16px;
+    border: 1px solid #e2e8f0;
+}
+
+.sbr-awards-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.sbr-awards-header h4 {
+    font-size: 20px;
+    font-weight: 800;
+    color: #0b1a30;
+    margin-bottom: 6px;
+}
+
+.sbr-awards-header p {
+    font-size: 13px;
+    color: #64748b;
+    margin: 0;
+}
+
+.sbr-award-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 18px 14px;
+    text-align: center;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sbr-award-card:hover {
+    transform: translateY(-4px);
+    border-color: #ff5e14;
+    box-shadow: 0 10px 25px rgba(255, 94, 20, 0.15);
+}
+
+.sbr-award-card img {
+    height: 65px;
+    width: auto;
+    object-fit: contain;
+    margin-bottom: 12px;
+    filter: drop-shadow(0 2px 5px rgba(0,0,0,0.06));
+}
+
+.sbr-award-card h6 {
+    font-size: 13px;
+    font-weight: 700;
+    color: #1e293b;
+    margin: 0 0 2px;
+}
+
+.sbr-award-card span {
+    font-size: 11px;
+    color: #94a3b8;
+    font-weight: 600;
+}
+
+/* --------------------------------------------------------------------------
+   Point 5 & 6: Our Vision & Our Mission
+   -------------------------------------------------------------------------- */
+.sbr-vision-mission-section {
+    padding: 60px 0;
+    background: linear-gradient(135deg, #0b1a30 0%, #162c4e 100%);
+    color: #ffffff;
+    position: relative;
+    overflow: hidden;
+}
+
+.vm-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 35px 30px;
+    height: 100%;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.vm-card:hover {
+    background: rgba(255, 255, 255, 0.09);
+    border-color: #ff5e14;
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.vm-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(255, 94, 20, 0.2);
+    color: #ff7e3d;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-bottom: 16px;
+}
+
+.vm-icon-box {
+    width: 64px;
+    height: 64px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #ff5e14, #ff8c42);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    margin-bottom: 22px;
+    box-shadow: 0 10px 20px rgba(255, 94, 20, 0.35);
+}
+
+.vm-card h3 {
+    font-size: 24px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 14px;
+}
+
+.vm-card p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #cbd5e1;
+    margin: 0;
+}
+
+/* --------------------------------------------------------------------------
+   Point 7: Product Range with Model & Cavity Checker
+   -------------------------------------------------------------------------- */
+.product-checker-bar {
+    background: #f1f5f9;
+    border-radius: 16px;
+    padding: 12px 16px;
+    margin-bottom: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    border: 1px solid #e2e8f0;
+}
+
+.checker-label-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.checker-label-group i {
+    font-size: 20px;
+    color: #ff5e14;
+}
+
+.checker-label-group span {
+    font-size: 14px;
+    font-weight: 700;
+    color: #0b1a30;
+}
+
+.cavity-filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.cavity-btn {
+    border: 1px solid #cbd5e1;
+    background: #ffffff;
+    color: #334155;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.cavity-btn:hover,
+.cavity-btn.active {
+    background: #ff5e14;
+    border-color: #ff5e14;
+    color: #ffffff;
+    box-shadow: 0 4px 10px rgba(255, 94, 20, 0.25);
+}
+
+.model-badge-tag {
+    display: inline-block;
+    background: #0b1a30;
+    color: #ffffff;
+    padding: 3px 8px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.cavity-no-badge {
+    display: inline-block;
+    background: rgba(255, 94, 20, 0.15);
+    color: #ff5e14;
+    border: 1px solid rgba(255, 94, 20, 0.3);
+    padding: 3px 8px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+/* --------------------------------------------------------------------------
+   Point 8: Customer Care (1. Service & Support, 2. Contact Us Now)
+   -------------------------------------------------------------------------- */
+.sbr-customer-care-section {
+    padding: 70px 0;
+    background: #ffffff;
+    position: relative;
+}
+
+.care-card {
+    background: #f8fafc;
+    border-radius: 20px;
+    padding: 36px 30px;
+    border: 1px solid #e2e8f0;
+    height: 100%;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.care-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(11, 26, 48, 0.08);
+    border-color: #ff5e14;
+}
+
+.care-card-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 22px;
+}
+
+.care-icon-wrap {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #ff5e14, #ff8c42);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    flex-shrink: 0;
+}
+
+.care-header-text h3 {
+    font-size: 20px;
+    font-weight: 800;
+    color: #0b1a30;
+    margin: 0 0 4px;
+}
+
+.care-header-text span {
+    font-size: 12px;
+    font-weight: 700;
+    color: #ff5e14;
+    text-transform: uppercase;
+}
+
+.care-points-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 25px;
+}
+
+.care-points-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14px;
+    color: #475569;
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+
+.care-points-list li i {
+    color: #10b981;
+    font-size: 15px;
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+.care-action-box {
+    margin-top: auto;
+}
+
+.care-contact-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #ffffff;
+    padding: 12px 16px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    margin-bottom: 10px;
+    text-decoration: none !important;
+    transition: all 0.2s ease;
+}
+
+.care-contact-item:hover {
+    border-color: #ff5e14;
+    background: rgba(255, 94, 20, 0.04);
+}
+
+.care-contact-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background: rgba(255, 94, 20, 0.1);
+    color: #ff5e14;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+}
+
+.care-contact-details span {
+    display: block;
+    font-size: 11px;
+    color: #94a3b8;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.care-contact-details strong {
+    display: block;
+    font-size: 14px;
+    color: #0b1a30;
+}
+
+/* --------------------------------------------------------------------------
+   Point 9: Spares & Training Section
+   -------------------------------------------------------------------------- */
+.sbr-spares-training-section {
+    padding: 65px 0;
+    background: #f8fafc;
+    border-top: 1px solid #e2e8f0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.spares-card, .training-card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 32px 28px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.spares-card:hover, .training-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(255, 94, 20, 0.1);
+    border-color: #ff5e14;
+}
+
+.spares-header, .training-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 18px;
+}
+
+.spares-icon-box {
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    background: rgba(255, 94, 20, 0.1);
+    color: #ff5e14;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+}
+
+.spares-features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.spare-feature-chip {
+    background: #f1f5f9;
+    padding: 8px 12px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #334155;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.spare-feature-chip i {
+    color: #ff5e14;
+    font-size: 13px;
+}
+
+/* --------------------------------------------------------------------------
+   Point 11: Floating Bottom Controls
+   (Left: Scroll to Top, Right: Quick Quotation Button)
+   -------------------------------------------------------------------------- */
+.sbr-scroll-to-top {
+    position: fixed;
+    bottom: 24px;
+    left: 24px;
+    width: 44px;
+    height: 44px;
+    background: #0b1a30;
+    color: #ffffff !important;
+    border-radius: 50%;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45);
+    z-index: 99999;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    text-decoration: none !important;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    padding: 0;
+    line-height: 1;
+}
+
+.sbr-scroll-to-top i {
+    font-size: 16px;
+    color: #ffffff;
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.sbr-scroll-to-top:hover {
+    background: #ff5e14;
+    border-color: #ff5e14;
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(255, 94, 20, 0.5);
+    color: #ffffff !important;
+}
+
+.sbr-scroll-to-top:hover i {
+    transform: translateY(-2px);
+}
+
+.sbr-quote-float-btn {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    height: 44px;
+    padding: 0 20px;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #ff5e14, #ff8c42);
+    color: #ffffff !important;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 6px 22px rgba(255, 94, 20, 0.45);
+    display: flex !important;
+    align-items: center;
+    gap: 8px;
+    z-index: 99999;
+    text-decoration: none !important;
+    transition: all 0.3s ease;
+    animation: pulseQuoteBtn 2.5s infinite;
+}
+
+@keyframes pulseQuoteBtn {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 94, 20, 0.6);
+    }
+    70% {
+        box-shadow: 0 0 0 12px rgba(255, 94, 20, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 94, 20, 0);
+    }
+}
+
+.sbr-quote-float-btn:hover {
+    background: linear-gradient(135deg, #e04a05, #ff701e);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(255, 94, 20, 0.6);
+    color: #ffffff !important;
+}
+
+.sbr-quote-float-btn i {
+    font-size: 15px;
+}
+
+@media (max-width: 576px) {
+    .sbr-scroll-to-top {
+        bottom: 18px;
+        left: 14px;
+        width: 40px;
+        height: 40px;
+        font-size: 15px;
+    }
+
+    .sbr-quote-float-btn {
+        bottom: 18px;
+        right: 14px;
+        height: 38px;
+        padding: 0 14px;
+        font-size: 12px;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   Point 12: Professional Footer Styling
+   -------------------------------------------------------------------------- */
+.sbr-pro-footer {
+    background: linear-gradient(180deg, #0d1a2d 0%, #070e17 100%) !important;
+    border-top: 2px solid rgba(255, 94, 20, 0.4) !important;
+    padding-top: 60px !important;
+    padding-bottom: 25px !important;
+    color: #cbd5e1 !important;
+    font-family: 'DM Sans', sans-serif !important;
+    position: relative !important;
+    z-index: 10 !important;
+}
+
+.sbr-f-brand-box {
+    padding-right: 15px;
+}
+
+.sbr-f-brand-lockup {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 14px !important;
+    text-decoration: none !important;
+    margin-bottom: 18px !important;
+}
+
+.sbr-f-logo-img {
+    width: 58px !important;
+    height: 58px !important;
+    max-width: 58px !important;
+    object-fit: contain !important;
+    flex-shrink: 0 !important;
+    filter: drop-shadow(0 4px 10px rgba(255, 94, 20, 0.35));
+    transition: transform 0.3s ease;
+}
+
+.sbr-f-brand-lockup:hover .sbr-f-logo-img {
+    transform: scale(1.05);
+}
+
+.sbr-f-brand-info {
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.sbr-f-brand-title {
+    font-size: 19px !important;
+    font-weight: 800 !important;
+    color: #ffffff !important;
+    letter-spacing: 0.6px !important;
+    line-height: 1.2 !important;
+    text-transform: uppercase !important;
+}
+
+.sbr-f-brand-sub {
+    font-size: 11px !important;
+    font-weight: 700 !important;
+    color: #ff5e14 !important;
+    letter-spacing: 1px !important;
+    text-transform: uppercase !important;
+    margin-top: 3px !important;
+}
+
+.sbr-f-desc {
+    font-size: 13.5px !important;
+    line-height: 1.65 !important;
+    color: #94a3b8 !important;
+    margin-bottom: 16px !important;
+}
+
+.sbr-f-trust-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.sbr-f-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 94, 20, 0.25);
+    color: #e2e8f0;
+    font-size: 11.5px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 6px;
+}
+
+.sbr-f-pill i {
+    color: #ff5e14;
+    font-size: 11px;
+}
+
+.sbr-f-title {
+    font-size: 17px !important;
+    font-weight: 800 !important;
+    color: #ffffff !important;
+    letter-spacing: 0.4px !important;
+    text-transform: uppercase !important;
+    margin-bottom: 8px !important;
+    margin-top: 0 !important;
+}
+
+.sbr-f-divider {
+    width: 36px;
+    height: 3px;
+    background: #ff5e14;
+    border-radius: 2px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 8px rgba(255, 94, 20, 0.6);
+}
+
+.sbr-f-nav-list {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.sbr-f-nav-list li {
+    margin-bottom: 11px !important;
+    list-style: none !important;
+    padding: 0 !important;
+}
+
+.sbr-f-nav-list li:last-child {
+    margin-bottom: 0 !important;
+}
+
+.sbr-f-nav-link {
+    color: #cbd5e1 !important;
+    font-size: 14px !important;
+    text-decoration: none !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    transition: all 0.25s ease !important;
+}
+
+.sbr-f-nav-link i {
+    font-size: 11px !important;
+    color: #ff5e14 !important;
+    transition: transform 0.25s ease;
+}
+
+.sbr-f-nav-link:hover {
+    color: #ff5e14 !important;
+    transform: translateX(4px) !important;
+}
+
+.sbr-f-nav-link:hover i {
+    transform: translateX(2px);
+}
+
+.sbr-f-contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.sbr-f-contact-item {
+    display: flex !important;
+    align-items: flex-start !important;
+    gap: 12px !important;
+}
+
+.sbr-f-icon-circle {
+    width: 34px !important;
+    height: 34px !important;
+    background: rgba(255, 94, 20, 0.12) !important;
+    border: 1px solid rgba(255, 94, 20, 0.3) !important;
+    border-radius: 8px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    color: #ff5e14 !important;
+    font-size: 13px !important;
+    flex-shrink: 0 !important;
+    margin-top: 2px;
+}
+
+.sbr-f-contact-text {
+    flex: 1;
+}
+
+.sbr-f-label {
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    color: #ff5e14;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    margin-bottom: 2px;
+}
+
+.sbr-f-contact-text p {
+    color: #cbd5e1 !important;
+    font-size: 13px !important;
+    line-height: 1.5 !important;
+    margin: 0 !important;
+}
+
+.sbr-f-contact-text a {
+    color: #cbd5e1 !important;
+    text-decoration: none !important;
+    transition: color 0.2s ease;
+}
+
+.sbr-f-contact-text a:hover {
+    color: #ff5e14 !important;
+}
+
+.sbr-f-phone-link {
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    font-size: 14px !important;
+}
+
+.sbr-f-map-wrap {
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    background: #000;
+}
+
+.sbr-f-map-wrap iframe {
+    display: block;
+    width: 100%;
+}
+
+.sbr-f-map-action {
+    display: block;
+    background: rgba(255, 255, 255, 0.06);
+    color: #ff5e14 !important;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+    padding: 7px 10px;
+    text-decoration: none !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    transition: background 0.2s ease;
+}
+
+.sbr-f-map-action:hover {
+    background: rgba(255, 94, 20, 0.15);
+    color: #ffffff !important;
+}
+
+.sbr-f-corp-banner {
+    background: rgba(255, 255, 255, 0.035) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 14px !important;
+    padding: 20px 24px !important;
+    margin-top: 40px !important;
+    margin-bottom: 20px !important;
+    backdrop-filter: blur(8px);
+}
+
+.sbr-f-corp-title {
+    font-size: 16px !important;
+    font-weight: 800 !important;
+    color: #ffffff !important;
+    letter-spacing: 0.5px !important;
+}
+
+.sbr-f-corp-est {
+    background: rgba(255, 94, 20, 0.18);
+    border: 1px solid rgba(255, 94, 20, 0.35);
+    color: #ff8b4d;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 6px;
+}
+
+.sbr-f-corp-sub {
+    font-size: 13px !important;
+    color: #94a3b8 !important;
+    line-height: 1.5 !important;
+}
+
+.sbr-f-social-box {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.sbr-f-social-label {
+    font-size: 13px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.sbr-f-social-icons {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sbr-f-social-btn {
+    width: 38px !important;
+    height: 38px !important;
+    border-radius: 50% !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    color: #ffffff !important;
+    text-decoration: none !important;
+    font-size: 16px !important;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+.sbr-f-fb {
+    background: #1877f2 !important;
+    box-shadow: 0 4px 12px rgba(24, 119, 242, 0.35);
+}
+
+.sbr-f-fb:hover {
+    background: #0d65d9 !important;
+    transform: translateY(-3px) scale(1.08) !important;
+    box-shadow: 0 6px 16px rgba(24, 119, 242, 0.55);
+}
+
+.sbr-f-insta {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%) !important;
+    box-shadow: 0 4px 12px rgba(220, 39, 67, 0.35);
+}
+
+.sbr-f-insta:hover {
+    transform: translateY(-3px) scale(1.08) !important;
+    box-shadow: 0 6px 16px rgba(220, 39, 67, 0.55);
+}
+
+.sbr-f-bottom-bar {
+    border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+    padding-top: 18px !important;
+    margin-top: 10px !important;
+    padding-left: 65px !important;
+    padding-right: 185px !important;
+}
+
+.sbr-f-tech-badge {
+    font-size: 12px !important;
+    color: #64748b !important;
+    letter-spacing: 0.3px;
+}
+
+.sbr-f-dev-box {
+    /* Developer accreditation */
+}
+
+.sbr-f-dev-text {
+    font-size: 12px !important;
+    color: #94a3b8 !important;
+}
+
+.sbr-f-dev-link {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* --------------------------------------------------------------------------
+   Point 13: Hindi Typography & Translation System Styling
+   -------------------------------------------------------------------------- */
+body.lang-hindi {
+    font-family: 'DM Sans', 'Noto Sans Devanagari', 'Segoe UI', Tahoma, sans-serif !important;
+}
+
+body.lang-hindi h1,
+body.lang-hindi h2,
+body.lang-hindi h3,
+body.lang-hindi h4,
+body.lang-hindi h5,
+body.lang-hindi h6 {
+    font-family: 'DM Sans', 'Noto Sans Devanagari', 'Segoe UI', sans-serif !important;
+    letter-spacing: normal !important;
+}
+
+/* Quick transition when switching languages */
+[data-i18n] {
+    transition: opacity 0.15s ease-in-out;
+}
+
+.translating [data-i18n] {
+    opacity: 0.5;
+}

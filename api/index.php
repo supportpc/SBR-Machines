@@ -37,6 +37,8 @@
     <link rel="stylesheet" href="css/mousecursor.css">
     <!-- Main Custom -->
     <link href="css/custom.css" rel="stylesheet" media="screen">
+    <!-- Home Updates Custom Styles -->
+    <link href="css/home-updates.css?v=<?php echo time(); ?>" rel="stylesheet" media="screen">
 </head>
 
 <body>
@@ -248,73 +250,213 @@
     </div>
     <!-- Hero CTA Box End -->
 
-    <!-- Professional Stats Counter Section Start -->
-   
-    <!-- Professional Stats Counter Section End -->
+    <!-- Point 10: SBR Stats Counter Section -->
+  
+    <!-- Point 10 Stats End -->
 
-    <!-- Process Section: Transform Preforms into Bottles -->
-    <div class="about-us" id="process">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6">
-                <div class="about-images">
-                   <img src="images/sbr-building.jpg" style="border-radius:20px" alt="">
+    <!-- Point 4: About SBR - Mother Plant Info + Photo of the Sir + Awards Received -->
+    <section class="sbr-about-director-section" id="about-sbr">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <!-- Left: Photo of Sir (Director/Founder) -->
+                <div class="col-lg-5 col-md-12">
+                    <div class="director-card-wrap wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="director-img-container">
+                            <img src="images/sir-madam.png" alt="Managing Director - SBR Machines">
+                            <div class="director-badge-overlay">
+                                <h4 data-i18n="director_name">Managing Director</h4>
+                                <p data-i18n="director_title">Founder & Managing Director, SBR Machines</p>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+
+                <!-- Right: Plant Information & Infrastructure -->
+                <div class="col-lg-7 col-md-12">
+                    <div class="sbr-plant-info-content wow fadeInUp" data-wow-delay="0.2s">
+                        <span class="sbr-plant-badge" data-i18n="about_tag"><i class="fa-solid fa-industry"></i> Who We Are & Infrastructure</span>
+                        <h2 class="text-anime-style-2" data-cursor="-opaque" data-i18n="about_title">Leading Manufacturer of <span>Advanced PET Blow Moulding Machines</span></h2>
+                        <h5 class="text-muted mb-3" style="font-size: 15px; font-weight: 700; color: #ff5e14 !important;" data-i18n="plant_sub">Mother Plant: Chakan MIDC Phase-II, Pune (50,000+ Sq. Ft. Facility)</h5>
+                        
+                        <p class="mb-3" data-i18n="plant_desc1">SBR Machines Pvt. Ltd. is an industry pioneer in manufacturing high-speed, energy-efficient PET Stretch Blow Moulding Machines. From our state-of-the-art mother plant in Chakan Industrial Corridor, Pune, we design turnkey solutions with HAAS CNC precision machining.</p>
+                        <p class="mb-4" data-i18n="plant_desc2">With 24/7 dedicated testing bays and in-house component fabrication, we guarantee zero-defect production lines for water, beverages, edible oil, pharmaceuticals, and household packaging.</p>
+
+                        <!-- Plant Highlights -->
+                        <div class="row g-3 mb-4">
+                            <div class="col-sm-6 col-12">
+                                <div class="plant-spec-item">
+                                    <div class="plant-spec-icon"><i class="fa-solid fa-microchip"></i></div>
+                                    <div class="plant-spec-info">
+                                        <h5>HAAS CNC Machining</h5>
+                                        <p>In-house German & US CNC centres for micron-level tolerance.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-12">
+                                <div class="plant-spec-item">
+                                    <div class="plant-spec-icon"><i class="fa-solid fa-bolt"></i></div>
+                                    <div class="plant-spec-info">
+                                        <h5>Up to 40% Energy Saving</h5>
+                                        <p>High-efficiency IR quartz heating and air recycling loop.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-12">
+                                <div class="plant-spec-item">
+                                    <div class="plant-spec-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                                    <div class="plant-spec-info">
+                                        <h5>Turnkey Plant Execution</h5>
+                                        <p>From preform design, mould making to bottle delivery lines.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-12">
+                                <div class="plant-spec-item">
+                                    <div class="plant-spec-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                                    <div class="plant-spec-info">
+                                        <h5>Pre-Dispatch 24/7 Trials</h5>
+                                        <p>Every machine undergoes 72 hours of uninterrupted testing.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center gap-3 flex-wrap">
+                            <a href="#machines" class="btn-default" data-i18n="nav_machines">Explore Machines</a>
+                            <a href="tel:+918793044005" class="about-phone-btn">
+                                <div class="phone-icon"><i class="fa-solid fa-phone"></i></div>
+                                <div class="phone-meta">
+                                    <span>Direct Plant Hotline</span>
+                                    <strong>+91 8793044005</strong>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-6">
-                <div class="about-us-content">
-                    <div class="section-title">
-                        <h3 class="wow fadeInUp"><i class="fa-solid fa-arrows-spin"></i> About Us</h3>
-                        <h2 class="text-anime-style-2" data-cursor="-opaque">Leading Manufacturer of
-                            <span>Advanced PET Blow Moulding Machines</span>
-                        </h2>
-                        <p class="wow fadeInUp" data-wow-delay="0.2s">SBR Machines Pvt. Ltd., Pune, India, is a leading manufacturer of advanced PET bottle blowing machines with over 17 years of expertise. Our flagship SE (STAR) Series All-Electric High-Speed Machines are engineered for superior productivity, energy efficiency, and precision.</p>
-                        <p class="wow fadeInUp" data-wow-delay="0.3s">We provide complete turnkey solutions including plant planning, installation, training, and after-sales support. Trusted by 800+ satisfied customers with over 1,000 installations across India and international markets.</p>
+
+            <!-- Awards Received Showcase -->
+            <div class="sbr-awards-wrapper wow fadeInUp" data-wow-delay="0.3s">
+                <div class="sbr-awards-header">
+                    <h4 data-i18n="awards_heading">Awards & Industry Recognitions Received</h4>
+                    <p data-i18n="awards_sub">Recognized for excellence in engineering, energy conservation, and PET machine innovation.</p>
+                </div>
+                <div class="row g-3 justify-content-center">
+                    <div class="col-lg-3 col-md-6 col-6">
+                        <div class="sbr-award-card">
+                            <img src="images/awards-1.png" alt="National Quality Award">
+                            <h6 data-i18n="award1_title">National Quality Excellence</h6>
+                            <span data-i18n="award1_sub">Manufacturing Benchmark</span>
+                        </div>
                     </div>
-                    
-                    <div class="about-content-btn wow fadeInUp" data-wow-delay="0.4s">
-                        <a href="#machines" class="btn-default">Explore
-                            Machines</a>
-                        <a href="tel:+918793044005" class="about-phone-btn">
-                            <div class="phone-icon"><i class="fa-solid fa-phone"></i></div>
-                            <div class="phone-meta">
-                                <span>Technical Support</span>
-                                <strong>+91 8793044005</strong>
-                            </div>
-                        </a>
+                    <div class="col-lg-3 col-md-6 col-6">
+                        <div class="sbr-award-card">
+                            <img src="images/awards-2.png" alt="Innovation Award">
+                            <h6 data-i18n="award2_title">Best Innovation in PET</h6>
+                            <span data-i18n="award2_sub">Technology Leadership</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-6">
+                        <div class="sbr-award-card">
+                            <img src="images/awards-3.png" alt="Energy Efficiency Award">
+                            <h6 data-i18n="award3_title">Energy Efficiency Award</h6>
+                            <span data-i18n="award3_sub">Eco-Smart Technology</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-6">
+                        <div class="sbr-award-card">
+                            <img src="images/awards-4.png" alt="ISO Certification">
+                            <h6 data-i18n="award4_title">ISO 9001:2015 Certified</h6>
+                            <span data-i18n="award4_sub">Standardized Quality</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-    <!-- Process Section End -->
+    </section>
+    <!-- Point 4 About & Awards End -->
 
-    <!-- Machine Range Section (Products) -->
+    <!-- Point 5 & 6: Our Vision & Our Mission Section -->
+    <section class="sbr-vision-mission-section" id="vision-mission">
+        <div class="container">
+            <div class="row section-row align-items-center mb-4">
+                <div class="col-lg-12 text-center">
+                    <div class="section-title section-title-center">
+                        <h3 class="wow fadeInUp text-white-50" data-i18n="vm_section_tag">Corporate Philosophy</h3>
+                        <h2 class="text-white text-anime-style-2" data-cursor="-opaque" data-i18n="vm_section_title">Our Guiding Principles for Global Leadership</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <!-- Point 5: Our Vision -->
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="vm-card wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="vm-badge" data-i18n="vision_badge"><i class="fa-solid fa-eye"></i> Future Aspiration</div>
+                        <div class="vm-icon-box">
+                            <i class="fa-solid fa-compass"></i>
+                        </div>
+                        <h3 data-i18n="vision_title">Our Vision</h3>
+                        <p data-i18n="vision_desc">To be universally recognized as the gold standard in high-speed, eco-efficient PET Stretch Blow Moulding engineering, driving sustainable packaging innovation across global industries.</p>
+                    </div>
+                </div>
+
+                <!-- Point 6: Our Mission -->
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="vm-card wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="vm-badge" data-i18n="mission_badge"><i class="fa-solid fa-bullseye"></i> Core Purpose</div>
+                        <div class="vm-icon-box">
+                            <i class="fa-solid fa-crosshairs"></i>
+                        </div>
+                        <h3 data-i18n="mission_title">Our Mission</h3>
+                        <p data-i18n="mission_desc">To engineer ultra-reliable, energy-saving, and high-productivity PET machines with comprehensive turnkey service support, enabling packaging manufacturers to maximize output while minimizing operational expenses.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Point 5 & 6 Vision & Mission End -->
+
+    <!-- Machine Range Section (Products) - Point 7: Check Machine Model & Cavity No. -->
     <div class="our-services" id="machines">
         <div class="container">
             <div class="row section-row align-items-center">
                 <div class="col-lg-12">
                     <div class="section-title section-title-center">
-                        <h2 class=" text-anime-style-2"> Machines</h2>
-                        <h3 class="wow fadeInUp" data-cursor="-opaque">Solutions Designed Around <span>Your
-                                Production</span></h3>
+                        <span class="sbr-plant-badge" data-i18n="prod_tag"><i class="fa-solid fa-gears"></i> High-Performance Machinery</span>
+                        <h2 class="text-anime-style-2" data-i18n="prod_title">Range of Products - Check Machine Model &amp; Cavity No.</h2>
+                        <p class="wow fadeInUp text-muted" data-i18n="prod_sub">Select cavity requirement to filter models and find the ideal machine for your production line.</p>
                     </div>
                 </div>
             </div>
+
+            <!-- Point 7: Cavity & Model Checker Filter Bar -->
+            <div class="product-checker-bar wow fadeInUp" data-wow-delay="0.1s">
+                <div class="checker-label-group">
+                    <i class="fa-solid fa-filter"></i>
+                    <span>Check Machine Model &amp; Cavity:</span>
+                </div>
+                <div class="cavity-filter-buttons">
+                    <button type="button" class="cavity-btn active" data-filter="all" data-i18n="cavity_all">All Models</button>
+                    <button type="button" class="cavity-btn" data-filter="single" data-i18n="cavity_1">Single Cavity</button>
+                    <button type="button" class="cavity-btn" data-filter="2" data-i18n="cavity_2">2 Cavity</button>
+                    <button type="button" class="cavity-btn" data-filter="4" data-i18n="cavity_4">4 Cavity</button>
+                    <button type="button" class="cavity-btn" data-filter="jar" data-i18n="cavity_jar">5L-20L Jars</button>
+                </div>
+            </div>
+
             <div class="row">
                 <div class="col-lg-12">
                     <div class="services-slider">
                         <div class="swiper">
                             <div class="swiper-wrapper">
                                 <!-- 01. Single Cavity -->
-                                <div class="swiper-slide">
+                                <div class="swiper-slide machine-item-card" data-cavity="single">
                                     <div class="service-item">
                                         <div class="service-image">
                                             <div class="service-badge-wrapper">
                                                 <span class="service-no-pill">01</span>
-                                                <span class="service-cavity-pill"><i class="fa-solid fa-cube"></i>
-                                                    Single Cavity</span>
+                                                <span class="service-cavity-pill"><i class="fa-solid fa-cube"></i> Single Cavity</span>
                                             </div>
                                             <a href="se-star-series-energy-saving.php">
                                                 <figure class="image-anime">
@@ -324,26 +466,30 @@
                                             </a>
                                         </div>
                                         <div class="service-content">
+                                            <div class="d-flex align-items-center gap-2 mb-2 flex-wrap">
+                                                <span class="model-badge-tag">Model: SE-STAR-1000</span>
+                                                <span class="cavity-no-badge">Cavity: Single Cavity</span>
+                                            </div>
                                             <h3><a href="se-star-series-energy-saving.php">SE - STAR SERIES ENERGY SAVING</a></h3>
+                                            <p class="text-muted" style="font-size: 13px;">High speed all-electric PET blowing. Capacity up to 2,000 BPH with up to 40% power saving.</p>
                                            
                                             <a href="se-star-series-energy-saving.php" class="service-action-btn">
-                                                <span>View Machine</span>
+                                                <span data-i18n="view_details">View Machine</span>
                                                 <i class="fa-solid fa-arrow-right"></i>
                                             </a>
                                         </div>
                                     </div>
                                 </div>
 
-                                <!-- 02. Economical 2 Cavity -->
-                                <div class="swiper-slide">
+                                <!-- 02. Economical Single Cavity (0.7L) -->
+                                <div class="swiper-slide machine-item-card" data-cavity="single">
                                     <div class="service-item">
                                         <div class="service-image">
                                             <div class="service-badge-wrapper">
-                                                <span class="service-no-pill">01</span>
-                                                <span class="service-cavity-pill"><i class="fa-solid fa-cube"></i>
-                                                    Single Cavity</span>
+                                                <span class="service-no-pill">02</span>
+                                                <span class="service-cavity-pill"><i class="fa-solid fa-cube"></i> Single Cavity</span>
                                             </div>
-                                            <a href="#">
+                                            <a href="se-star-series-energy-saving-two.php">
                                                 <figure class="image-anime">
                                                     <img src="images/product/new-product/2.png"
                                                         alt="Single Cavity PET Stretch Blow Moulding Machine">
@@ -351,10 +497,15 @@
                                             </a>
                                         </div>
                                         <div class="service-content">
-                                            <h3><a href="#">SE - STAR SERIES ENERGY SAVING</a></h3>
+                                            <div class="d-flex align-items-center gap-2 mb-2 flex-wrap">
+                                                <span class="model-badge-tag">Model: SE-STAR-700</span>
+                                                <span class="cavity-no-badge">Cavity: Single Cavity (0.7L)</span>
+                                            </div>
+                                            <h3><a href="se-star-series-energy-saving-two.php">SE - STAR SERIES ENERGY SAVING (0.7L)</a></h3>
+                                            <p class="text-muted" style="font-size: 13px;">Optimized for small water bottles, juice, and cosmetics up to 700ml with fast cycle time.</p>
                                            
-                                            <a href="#" class="service-action-btn">
-                                                <span>Inquire Machine</span>
+                                            <a href="se-star-series-energy-saving-two.php" class="service-action-btn">
+                                                <span data-i18n="inquire_machine">Inquire Machine</span>
                                                 <i class="fa-solid fa-arrow-right"></i>
                                             </a>
                                         </div>
@@ -362,13 +513,12 @@
                                 </div>
 
                                 <!-- 03. Advanced 2 Cavity -->
-                                <div class="swiper-slide">
+                                <div class="swiper-slide machine-item-card" data-cavity="2">
                                     <div class="service-item">
                                         <div class="service-image">
                                             <div class="service-badge-wrapper">
                                                 <span class="service-no-pill">03</span>
-                                                <span class="service-cavity-pill"><i class="fa-solid fa-microchip"></i>
-                                                    2 Cavity Pro</span>
+                                                <span class="service-cavity-pill"><i class="fa-solid fa-microchip"></i> 2 Cavity Pro</span>
                                             </div>
                                             <a href="h14ae-eco-smart-energy-saving.php">
                                                 <figure class="image-anime">
@@ -378,24 +528,28 @@
                                             </a>
                                         </div>
                                         <div class="service-content">
+                                            <div class="d-flex align-items-center gap-2 mb-2 flex-wrap">
+                                                <span class="model-badge-tag">Model: H14AE-ECO</span>
+                                                <span class="cavity-no-badge">Cavity: 2 Cavity</span>
+                                            </div>
                                             <h3><a href="h14ae-eco-smart-energy-saving.php">H14AE-ECO SMART ENERGY SAVING</a></h3>
+                                            <p class="text-muted" style="font-size: 13px;">Eco-smart servo stretch system with multi-zone heating. Output up to 3,600 BPH.</p>
                                            
                                             <a href="h14ae-eco-smart-energy-saving.php" class="service-action-btn">
-                                                <span>View Machine</span>
+                                                <span data-i18n="view_details">View Machine</span>
                                                 <i class="fa-solid fa-arrow-right"></i>
                                             </a>
                                         </div>
                                     </div>
                                 </div>
 
-                                <!-- 04. Energy Saving 2 Cavity -->
-                                <div class="swiper-slide">
+                                <!-- 04. Energy Saving 4 Cavity -->
+                                <div class="swiper-slide machine-item-card" data-cavity="4">
                                     <div class="service-item">
                                         <div class="service-image">
                                             <div class="service-badge-wrapper">
                                                 <span class="service-no-pill">04</span>
-                                                <span class="service-cavity-pill"><i class="fa-solid fa-leaf"></i> 2
-                                                    Cavity Eco</span>
+                                                <span class="service-cavity-pill"><i class="fa-solid fa-leaf"></i> 4 Cavity Eco</span>
                                             </div>
                                             <a href="s14ae-energy-saving-4-cavity.php">
                                                 <figure class="image-anime">
@@ -405,23 +559,28 @@
                                             </a>
                                         </div>
                                         <div class="service-content">
+                                            <div class="d-flex align-items-center gap-2 mb-2 flex-wrap">
+                                                <span class="model-badge-tag">Model: S14AE-4C</span>
+                                                <span class="cavity-no-badge">Cavity: 4 Cavity</span>
+                                            </div>
                                             <h3><a href="s14ae-energy-saving-4-cavity.php">S14AE - ENERGY SAVING 4-CAVITY</a></h3>
+                                            <p class="text-muted" style="font-size: 13px;">Heavy-duty industrial mass production. Output up to 7,200 BPH with integrated air recovery.</p>
                                             
                                             <a href="s14ae-energy-saving-4-cavity.php" class="service-action-btn">
-                                                <span>View Machine</span>
+                                                <span data-i18n="view_details">View Machine</span>
                                                 <i class="fa-solid fa-arrow-right"></i>
                                             </a>
                                         </div>
                                     </div>
                                 </div>
 
-                                <!-- 05. Premium 4 Cavity -->
-                                <div class="swiper-slide">
+                                <!-- 05. Advance Single Cavity (5L-20L) -->
+                                <div class="swiper-slide machine-item-card" data-cavity="jar single">
                                     <div class="service-item">
                                         <div class="service-image">
                                             <div class="service-badge-wrapper">
                                                 <span class="service-no-pill">05</span>
-                                                <span class="service-cavity-pill"><i class="fa-solid fa-industry"></i> Single Cavity (5L-10L)</span>
+                                                <span class="service-cavity-pill"><i class="fa-solid fa-industry"></i> Single Cavity Jar</span>
                                             </div>
                                             <a href="advance-single-cavity.php">
                                                 <figure class="image-anime">
@@ -431,17 +590,20 @@
                                             </a>
                                         </div>
                                         <div class="service-content">
+                                            <div class="d-flex align-items-center gap-2 mb-2 flex-wrap">
+                                                <span class="model-badge-tag">Model: ADV-SINGLE-JAR</span>
+                                                <span class="cavity-no-badge">Cavity: Single Cavity (5L-20L)</span>
+                                            </div>
                                             <h3><a href="advance-single-cavity.php">ADVANCE SINGLE - CAVITY</a></h3>
+                                            <p class="text-muted" style="font-size: 13px;">Engineered for 5 Litre, 10 Litre, and 20 Litre large PET water jars and edible oil containers.</p>
                                            
                                             <a href="advance-single-cavity.php" class="service-action-btn">
-                                                <span>View Machine</span>
+                                                <span data-i18n="view_details">View Machine</span>
                                                 <i class="fa-solid fa-arrow-right"></i>
                                             </a>
                                         </div>
                                     </div>
                                 </div>
-
-                                <!-- 06. Energy Saving 4 Cavity -->
                                 
                             </div>
                             <div class="services-pagination"></div>
@@ -450,110 +612,14 @@
                 </div>
                 <div class="col-lg-12">
                     <div class="section-footer-text wow fadeInUp" data-wow-delay="0.2s">
-                        <p>From compact single-cavity to high-output multi-cavity systems. <a href="#">Find
-                                your machine</a></p>
+                        <p>Need a custom configuration or specific bottle mould? <a href="contact.php">Contact our Engineering Team</a></p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- Machine Range End -->
-      <div class="stats-counter-section">
-        <div class="container">
-            <div class="row g-4 justify-content-center">
-                <!-- Card 1: Years of Experience -->
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="stats-counter-card experience-card wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="stats-icon-box icon-blue">
-                            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="32" cy="27" r="18" stroke="#ffffff" stroke-width="3" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <circle cx="32" cy="27" r="13" stroke="#ffffff" stroke-width="1.8"
-                                    stroke-dasharray="3 3" />
-                                <polygon
-                                    points="32,18 34.7,23.5 40.8,24.4 36.4,28.7 37.4,34.8 32,31.9 26.6,34.8 27.6,28.7 23.2,24.4 29.3,23.5"
-                                    fill="#ffffff" />
-                                <path d="M24 41L17 56L26 52L29 44" stroke="#ffffff" stroke-width="3"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M40 41L47 56L38 52L35 44" stroke="#ffffff" stroke-width="3"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </div>
-                        <div class="stats-card-content">
-                            <div class="stats-number"><span class="counter">16</span><span class="plus-sign">+</span>
-                            </div>
-                            <h4 class="stats-title">Years of Experience</h4>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Card 2: Expert Employee -->
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="stats-counter-card employees-card wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="stats-icon-box icon-orange">
-                            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <line x1="32" y1="8" x2="32" y2="13" stroke="#ffffff" stroke-width="3"
-                                    stroke-linecap="round" />
-                                <line x1="21" y1="11" x2="24" y2="15" stroke="#ffffff" stroke-width="3"
-                                    stroke-linecap="round" />
-                                <line x1="43" y1="11" x2="40" y2="15" stroke="#ffffff" stroke-width="3"
-                                    stroke-linecap="round" />
-                                <path d="M10 40L18 32L22 36L14 44L10 40Z" stroke="#ffffff" stroke-width="2.8"
-                                    stroke-linejoin="round" />
-                                <line x1="14" y1="44" x2="8" y2="50" stroke="#ffffff" stroke-width="3"
-                                    stroke-linecap="round" />
-                                <path d="M54 40L46 32L42 36L50 44L54 40Z" stroke="#ffffff" stroke-width="2.8"
-                                    stroke-linejoin="round" />
-                                <line x1="50" y1="44" x2="56" y2="50" stroke="#ffffff" stroke-width="3"
-                                    stroke-linecap="round" />
-                                <path d="M18 32L26 24C28 22 31.5 22 33.5 24L37 27.5L32 32.5L28 28.5" stroke="#ffffff"
-                                    stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" />
-                                <path
-                                    d="M28 28.5L33.5 34C34.8 35.3 34.8 37.3 33.5 38.6L31.5 40.6C30.2 41.9 28.2 41.9 26.9 40.6L21 34.7"
-                                    stroke="#ffffff" stroke-width="2.8" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path
-                                    d="M32 32.5L37 37.5C38.3 38.8 38.3 40.8 37 42.1L35.5 43.6C34.2 44.9 32.2 44.9 30.9 43.6L25 37.7"
-                                    stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-                        </div>
-                        <div class="stats-card-content">
-                            <div class="stats-number"><span class="counter">250</span><span class="plus-sign">+</span>
-                            </div>
-                            <h4 class="stats-title">Expert Employee</h4>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 3: Happy Customer -->
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="stats-counter-card customer-card wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="stats-icon-box icon-yellow">
-                            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M27 17C27 12.58 30.58 9 35 9C39.42 9 43 12.58 43 17C43 21.42 39.42 25 35 25C30.58 25 27 21.42 27 17Z"
-                                    stroke="#ffffff" stroke-width="3" stroke-linecap="round" />
-                                <path d="M29 13C31 10.5 35 10.5 37 11" stroke="#ffffff" stroke-width="2.5"
-                                    stroke-linecap="round" />
-                                <path d="M14 51C14 41.5 22.5 34 33 34C37.5 34 41.6 35.5 44.8 38" stroke="#ffffff"
-                                    stroke-width="3" stroke-linecap="round" />
-                                <circle cx="47" cy="44" r="13" stroke="#ffffff" stroke-width="3" fill="none" />
-                                <path
-                                    d="M47 52C47 52 41 48 41 44C41 41.8 42.8 40.2 44.6 41.1C45.8 41.7 47 43.2 47 43.2C47 43.2 48.2 41.7 49.4 41.1C51.2 40.2 53 41.8 53 44C53 48 47 52 47 52Z"
-                                    fill="#ffffff" />
-                            </svg>
-                        </div>
-                        <div class="stats-card-content">
-                            <div class="stats-number"><span class="counter">2000</span><span class="plus-sign">+</span>
-                            </div>
-                            <h4 class="stats-title">Happy Customer</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- Technology Features Section -->
     <div class="our-awards">
@@ -667,23 +733,7 @@
                     </div>
 
                     <!-- Technology Highlights Strip -->
-                    <div class="tech-highlights-strip wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="tech-highlights-list">
-                            <div class="tech-highlight-item">
-                                <div class="icon-glow"><i class="fa-solid fa-gears"></i></div>
-                                <span>Centralized Auto-Lubrication</span>
-                            </div>
-                            <div class="tech-highlight-item">
-                                <div class="icon-glow"><i class="fa-solid fa-shield-halved"></i></div>
-                                <span>Heavy-Duty Rigid Steel Frame</span>
-                            </div>
-
-                        </div>
-                        <div class="tech-strip-action">
-                            <a href="#"><span>Request Full Technical Specs</span> <i
-                                    class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -926,40 +976,172 @@
     </div>
     <!-- Selection Guide End -->
 
-    <!-- CTA: Get Support -->
-    <div class="cta-box bg-section dark-section parallaxie">
+    <!-- Point 8: Customer Care Section (1. Service & Support, 2. Contact Us Now) -->
+    <section class="sbr-customer-care-section" id="customer-care">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 col-md-7">
-                    <div class="cta-box-content">
-                        <div class="section-title">
-                            <h3 class="wow fadeInUp">Support & Service</h3>
-                            <h2 class="text-anime-style-2" data-cursor="-opaque">Your Production Journey <span>Doesn't
-                                    End with Delivery</span></h2>
-                            <p class="wow fadeInUp" data-wow-delay="0.2s">Installation support, operator training,
-                                preventive maintenance, troubleshooting and spare parts.</p>
-                        </div>
-                        <div class="cta-box-body wow fadeInUp" data-wow-delay="0.4s">
-                            <div class="cta-box-btn"><a href="contact.php" class="btn-default">Contact Support</a>
-                            </div>
-                            <span>or</span>
-                            <div class="contact-now-box">
-                                <div class="icon-box"><i class="fa-sharp text-white fa-solid fa-phone"></i></div>
-                                <div class="contact-now-box-content">
-                                    <span>Call us</span>
-                                    <p><a href="tel:123456789">+91 8793044005</a></p>
+            <div class="row section-row align-items-center mb-4">
+                <div class="col-lg-12 text-center">
+                    <div class="section-title section-title-center">
+                        <span class="sbr-plant-badge" data-i18n="care_tag"><i class="fa-solid fa-headset"></i> 24/7 Assistance</span>
+                        <h2 class="text-anime-style-2" data-i18n="care_title">Dedicated Customer Care &amp; Production Support</h2>
+                        <p class="wow fadeInUp text-muted" data-i18n="care_sub">Your manufacturing continuity is our highest priority with instant technical service and rapid contact.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <!-- 1) Service & Support -->
+                <div class="col-lg-6 col-md-12">
+                    <div class="care-card wow fadeInUp" data-wow-delay="0.1s">
+                        <div>
+                            <div class="care-card-header">
+                                <div class="care-icon-wrap">
+                                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                                </div>
+                                <div class="care-header-text">
+                                    <span data-i18n="service_title">1. Service &amp; Support</span>
+                                    <h3 data-i18n="service_subtitle">Comprehensive Lifecycle Assistance</h3>
                                 </div>
                             </div>
+                            <ul class="care-points-list">
+                                <li>
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <span data-i18n="service_point1">24/7 Technical Assistance Hotline &amp; Quick Troubleshooting</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <span data-i18n="service_point2">Annual Maintenance Contracts (AMC) &amp; Preventive Health Checks</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <span data-i18n="service_point3">Experienced Field Engineers Dispatched On-Site Within Hours</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <span data-i18n="service_point4">Remote Diagnostics &amp; Live Siemens PLC Telemetry Support</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="care-action-box">
+                            <a href="contact.php" class="btn-default w-100 text-center" data-i18n="service_title">Request Machine Service</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-5">
-                    <div class="cta-box-image"><img src="images/adventages.png" alt="SBR Machines Support"></div>
+
+                <!-- 2) Contact Us Now -->
+                <div class="col-lg-6 col-md-12">
+                    <div class="care-card wow fadeInUp" data-wow-delay="0.2s">
+                        <div>
+                            <div class="care-card-header">
+                                <div class="care-icon-wrap" style="background: linear-gradient(135deg, #10b981, #059669);">
+                                    <i class="fa-solid fa-phone-volume"></i>
+                                </div>
+                                <div class="care-header-text">
+                                    <span style="color: #10b981;" data-i18n="contact_title">2. Contact Us Now</span>
+                                    <h3 data-i18n="contact_subtitle">Instant Inquiry &amp; Direct Engineer Access</h3>
+                                </div>
+                            </div>
+                            <div class="care-contacts-group">
+                                <a href="tel:+918793044005" class="care-contact-item">
+                                    <div class="care-contact-icon"><i class="fa-solid fa-phone"></i></div>
+                                    <div class="care-contact-details">
+                                        <span data-i18n="call_hotline">Call Technical Helpline</span>
+                                        <strong>+91 8793044005</strong>
+                                    </div>
+                                </a>
+                                <a href="mailto:sales@sbrmachines.com" class="care-contact-item">
+                                    <div class="care-contact-icon" style="color: #3b82f6; background: rgba(59, 130, 246, 0.1);"><i class="fa-solid fa-envelope"></i></div>
+                                    <div class="care-contact-details">
+                                        <span data-i18n="email_direct">Email Machine Inquiries</span>
+                                        <strong>sales@sbrmachines.com</strong>
+                                    </div>
+                                </a>
+                                <a href="https://wa.me/918793044005" target="_blank" rel="noopener noreferrer" class="care-contact-item">
+                                    <div class="care-contact-icon" style="color: #25d366; background: rgba(37, 211, 102, 0.1);"><i class="fa-brands fa-whatsapp"></i></div>
+                                    <div class="care-contact-details">
+                                        <span data-i18n="whatsapp_chat">Chat on WhatsApp Support</span>
+                                        <strong>+91 8793044005 (Live Chat)</strong>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="care-action-box">
+                            <a href="contact.php" class="btn-default btn-highlighted w-100 text-center" data-i18n="btn_contact_page">Open Contact Page</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- CTA End -->
+    </section>
+    <!-- Point 8 Customer Care End -->
+
+    <!-- Point 9: Spares & Training Section -->
+    <section class="sbr-spares-training-section" id="spares-training">
+        <div class="container">
+            <div class="row section-row align-items-center mb-4">
+                <div class="col-lg-12 text-center">
+                    <div class="section-title section-title-center">
+                        <span class="sbr-plant-badge" data-i18n="spares_tag"><i class="fa-solid fa-boxes-packing"></i> Turnkey Operations</span>
+                        <h2 class="text-anime-style-2" data-i18n="spares_section_title">Genuine Spares &amp; Certified Operator Training</h2>
+                        <p class="wow fadeInUp text-muted">Ensuring zero downtime with express spare supply and skilled personnel development.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Spares Card -->
+                <div class="col-lg-6 col-md-12">
+                    <div class="spares-card wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="spares-header">
+                            <div class="spares-icon-box">
+                                <i class="fa-solid fa-gears"></i>
+                            </div>
+                            <div>
+                                <h3 data-i18n="spares_title" style="font-size: 20px; font-weight: 800; color: #0b1a30; margin: 0 0 4px;">Genuine OEM Spare Parts</h3>
+                                <span class="badge bg-success" style="font-size: 11px;">100% Factory Certified</span>
+                            </div>
+                        </div>
+                        <p data-i18n="spares_desc" style="font-size: 14px; color: #475569; line-height: 1.5;">We maintain ready-stock inventory for all wear-and-tear parts at our Chakan facility, guaranteeing same-day dispatch to keep your bottling lines operating uninterrupted.</p>
+                        
+                        <div class="spares-features-grid">
+                            <div class="spare-feature-chip"><i class="fa-solid fa-check"></i> <span data-i18n="spares_chip1">High-Pressure Blow Valves</span></div>
+                            <div class="spare-feature-chip"><i class="fa-solid fa-check"></i> <span data-i18n="spares_chip2">Stretch Servo Cylinders</span></div>
+                            <div class="spare-feature-chip"><i class="fa-solid fa-check"></i> <span data-i18n="spares_chip3">Infrared Quartz Lamps</span></div>
+                            <div class="spare-feature-chip"><i class="fa-solid fa-check"></i> <span data-i18n="spares_chip4">Custom Precision Moulds</span></div>
+                        </div>
+
+                        <a href="contact.php" class="btn-default w-100 text-center" data-i18n="spares_title">Order Spare Parts</a>
+                    </div>
+                </div>
+
+                <!-- Training Card -->
+                <div class="col-lg-6 col-md-12">
+                    <div class="training-card wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="training-header">
+                            <div class="spares-icon-box" style="background: rgba(37, 99, 235, 0.1); color: #2563eb;">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                            </div>
+                            <div>
+                                <h3 data-i18n="training_title" style="font-size: 20px; font-weight: 800; color: #0b1a30; margin: 0 0 4px;">Technical &amp; Operator Training</h3>
+                                <span class="badge bg-primary" style="font-size: 11px;">Skill Certification</span>
+                            </div>
+                        </div>
+                        <p data-i18n="training_desc" style="font-size: 14px; color: #475569; line-height: 1.5;">Empower your operators and maintenance technicians with hands-on machinery training, recipe setting, safety compliance, and mold changeover certifications.</p>
+
+                        <div class="spares-features-grid">
+                            <div class="spare-feature-chip"><i class="fa-solid fa-check" style="color:#2563eb;"></i> <span data-i18n="training_chip1">Hands-on Machine Handling</span></div>
+                            <div class="spare-feature-chip"><i class="fa-solid fa-check" style="color:#2563eb;"></i> <span data-i18n="training_chip2">Recipe &amp; Heat Optimization</span></div>
+                            <div class="spare-feature-chip"><i class="fa-solid fa-check" style="color:#2563eb;"></i> <span data-i18n="training_chip3">Fast Mould Changeovers</span></div>
+                            <div class="spare-feature-chip"><i class="fa-solid fa-check" style="color:#2563eb;"></i> <span data-i18n="training_chip4">Preventive Care Certification</span></div>
+                        </div>
+
+                        <a href="contact.php" class="btn-default btn-highlighted w-100 text-center" data-i18n="training_title">Schedule Training Session</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Point 9 Spares & Training End -->
 
     <!-- Testimonials & Trust -->
 
@@ -1090,6 +1272,10 @@
     <script src="js/jquery.mb.YTPlayer.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/function.js"></script>
+    <!-- Home Updates Custom Script & Translation Engine -->
+    <div id="google_translate_element" style="display:none;"></div>
+    <script src="js/home-updates.js?v=<?php echo time(); ?>"></script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script src="../assets/js/theme-panel-dynamic.js"></script>
 </body>
 
